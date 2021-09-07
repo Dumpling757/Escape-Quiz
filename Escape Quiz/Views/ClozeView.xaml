@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="Escape_Quiz.Views.ClozeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Escape_Quiz.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <!-- TODO Generisches Layout fuer lueckentext Aufgaben erstellen! -->
+    <!-- INFO https://stackoverflow.com/questions/20073294/change-color-of-button-when-mouse-is-over Mouse Over Color-->
+    <Grid x:Name="MultipleChoiceViewGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100*" />
+            <ColumnDefinition Width="100*" />
+            <ColumnDefinition Width="100*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+        </Grid.RowDefinitions>
+
+        <Label x:Name="Frage" Content="Hier könnte Ihre Frage stehen!" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1"/>
+
+        
+        <Button Content="Nächste Frage" x:Name="ClozeViewNext" HorizontalAlignment="Center" Grid.Row="8" Grid.Column="4"/>
+        <CheckBox Content="CheckBox" Grid.Column="3" HorizontalAlignment="Left" Margin="77,0,0,0" VerticalAlignment="Center" Checked="CheckBox_Checked"/>
+    <!-- TODO Mehr Optionen -->
+    
+    </Grid>
+</UserControl>
