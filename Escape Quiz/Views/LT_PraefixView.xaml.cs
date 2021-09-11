@@ -13,16 +13,15 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
 namespace Escape_Quiz.Views
 {
     /// <summary>
-    /// Interaktionslogik für Wahrheitswerttabelle.xaml
+    /// Interaktionslogik für LT_PraefixView.xaml
     /// </summary>
-    public partial class Wahrheitswerttabelle : UserControl
+    public partial class LT_PraefixView : UserControl
     {
         private Frame frame;
-        public Wahrheitswerttabelle(Frame frame)
+        public LT_PraefixView(Frame frame)
         {
             InitializeComponent();
             this.frame = frame;
@@ -30,12 +29,7 @@ namespace Escape_Quiz.Views
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-            this.FrameQuestion.Navigate(new SC_Datenspeicher_View(this.FrameQuestion));
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            this.frame.Navigate(new MC_KommazahlenView(this.frame));
         }
     }
 }

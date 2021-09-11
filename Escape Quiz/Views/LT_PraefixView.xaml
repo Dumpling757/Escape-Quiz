@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Escape_Quiz.Views.LT_PraefixView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Escape_Quiz"
+             xmlns:Views="clr-namespace:Escape_Quiz.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="43,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="375" Foreground="White" FontFamily="Arial" FontSize="20"><Run Text="Hier fehlen passende Zahlen. "/><LineBreak/><Run Text="Fallen euch die richtigen Lösungen ein? "/><LineBreak/><Run/><LineBreak/><Run Text=""/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="43,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="214" Width="690" Foreground="White" FontFamily="Arial" FontSize="20"><Run Text="Ein Client im Netz der FI194 GmbH hat die IP 172.16.10.10. Leider hat der Admin einen Fehler in den Netzwerkadaptereinstellungen gemacht. Die Subnetzmaske, die er eingetragen hat ist 255.255.0.0"/><Run Text=", das entspricht dem Präfix"/><Run Text="&#x9;.     . "/><Run Text="Die Subnetzmaske soll allerdings das Präfix 32 haben. Die richtige Subnetzmaske ist dementsprechend"/><Run Text="&#x9;"/><Run Text="&#x9;&#x9;     "/><Run Text=". "/></TextBlock>
+        <TextBox x:Name="LT_TB1" HorizontalAlignment="Left" Height="23" Margin="104,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" />
+        <TextBox x:Name="LT_TB2" HorizontalAlignment="Left" Height="23" Margin="447,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" />
+        <Button Content="Nächste Frage" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_NextQuestion" FontFamily="Arial" FontSize="20" />
+    </Grid>
+</UserControl>

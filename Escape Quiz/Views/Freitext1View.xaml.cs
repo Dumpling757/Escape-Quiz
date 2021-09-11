@@ -13,29 +13,22 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
 namespace Escape_Quiz.Views
 {
     /// <summary>
-    /// Interaktionslogik für Wahrheitswerttabelle.xaml
+    /// Interaktionslogik für Freitext1View.xaml
     /// </summary>
-    public partial class Wahrheitswerttabelle : UserControl
+    public partial class Freitext1View : UserControl
     {
         private Frame frame;
-        public Wahrheitswerttabelle(Frame frame)
+        public Freitext1View(Frame frame)
         {
-            InitializeComponent();
             this.frame = frame;
+            InitializeComponent();
         }
-
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-            this.FrameQuestion.Navigate(new SC_Datenspeicher_View(this.FrameQuestion));
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            // this.frame.Navigate(new MC_Peripheriegeraete(this.frame));
         }
     }
 }

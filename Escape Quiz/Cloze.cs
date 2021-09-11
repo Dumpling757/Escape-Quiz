@@ -15,12 +15,19 @@ namespace Escape_Quiz
         {
             input.ToLower();
             string regexString = "[^A-Za-z0-9]";
-            Regex r = new Regex(regexString);
-            // Match target = ;
-           // MatchEvaluator evaluator = new MatchEvaluator(target);
+            Regex r = new Regex(regexString, RegexOptions.IgnoreCase);
+            MatchEvaluator matchEvaluator = new MatchEvaluator(ReplaceWithBlank);
+            r.Replace(input, matchEvaluator);
+            
+            
             // TODO Input normalisieren / auf leichte Fehler ueberpruefen.
 
             return input;
+        }
+
+        public string ReplaceWithBlank(Match m)
+        {
+            return " ";
         }
     }
 }

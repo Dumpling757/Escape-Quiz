@@ -13,29 +13,27 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
 namespace Escape_Quiz.Views
 {
     /// <summary>
-    /// Interaktionslogik für Wahrheitswerttabelle.xaml
+    /// Interaktionslogik für ZO_Hard_Software.xaml
     /// </summary>
-    public partial class Wahrheitswerttabelle : UserControl
+    public partial class ZO_Hard_Software : UserControl
     {
         private Frame frame;
-        public Wahrheitswerttabelle(Frame frame)
+        public ZO_Hard_Software(Frame frame)
         {
             InitializeComponent();
             this.frame = frame;
         }
 
-        private void Button_NextQuestion(object sender, RoutedEventArgs e)
+        private void Button_Ende(object sender, RoutedEventArgs e)
         {
-            this.FrameQuestion.Navigate(new SC_Datenspeicher_View(this.FrameQuestion));
-        }
+            MessageBox.Show("Herzlichen Glückwunsch!\n\n"
+                + "ihr habt das Quiz erfolgreich bestanden.\n\n" 
+                + "\t " + "/10 richtig."); //Hier Ausgabe der richtigen Anzahl an Fragen
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            Application.Current.MainWindow.Close();
         }
     }
 }

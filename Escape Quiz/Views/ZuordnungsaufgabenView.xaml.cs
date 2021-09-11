@@ -13,24 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
-namespace Escape_Quiz.Views
+namespace Design_Quiz.Views
 {
     /// <summary>
-    /// Interaktionslogik für Wahrheitswerttabelle.xaml
+    /// Interaktionslogik für ZuordnungsaufgabenView.xaml
     /// </summary>
-    public partial class Wahrheitswerttabelle : UserControl
+    public partial class ZuordnungsaufgabenView : UserControl
     {
-        private Frame frame;
-        public Wahrheitswerttabelle(Frame frame)
+        public ZuordnungsaufgabenView()
         {
             InitializeComponent();
-            this.frame = frame;
-        }
-
-        private void Button_NextQuestion(object sender, RoutedEventArgs e)
-        {
-            this.FrameQuestion.Navigate(new SC_Datenspeicher_View(this.FrameQuestion));
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

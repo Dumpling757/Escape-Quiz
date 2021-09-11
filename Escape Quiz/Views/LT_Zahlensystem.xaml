@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Escape_Quiz.Views.LT_Zahlensystem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Escape_Quiz"
+             xmlns:Views="clr-namespace:Escape_Quiz.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="43,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="375" Foreground="White" FontFamily="Arial" FontSize="20"><Run Text="Hier fehlen passende Begriffe und Zahlen. "/><LineBreak/><Run Text="Fallen euch die richtigen Lösungen ein? "/><LineBreak/><Run/><LineBreak/><Run Text=""/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="43,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="214" Width="690" Foreground="White" FontFamily="Arial" FontSize="20"><Run Text="Der Rechner speichert Daten mit Hilfe der Zahlen 0 und 1. "/><Run Text="Daraus abgeleitet wurde das "/><Run Text="&#x9;"/><Run Text=" &#x9;Zahlensystem entwick"/><Run Text="elt. Dies ist neben dem vom Menschen oft benutzten dezimalen Zahlensystem in der "/><Run Text="&#x9;"/><Run Text="&#x9;   "/><Run Text="kurz IT"/><Run Text=" bekannt. "/><Run Text="Für die Ermittlung von verfügbaren IP Adressen in einem Netz ist es unerlässlich in diesem Zahlensystem rechnen zu können. Aber etwas einfaches. "/><Run Text="2⁵"/><Run Text=" entspricht welcher Zahl im dezimalen Zahlensystem?  "/><LineBreak/></TextBlock>
+        <TextBox x:Name="LT_TB1" HorizontalAlignment="Left" Height="23" Margin="141,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" />
+        <TextBox x:Name="LT_TB2" HorizontalAlignment="Left" Height="23" Margin="546,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" />
+        <TextBox x:Name="LT_TB3" HorizontalAlignment="Left" Height="23" Margin="43,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" />
+        <Button Content="Nächste Frage" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_NextQuestion" FontFamily="Arial" FontSize="20" />
+    </Grid>
+</UserControl>

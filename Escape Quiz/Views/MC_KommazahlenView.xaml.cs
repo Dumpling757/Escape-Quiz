@@ -13,29 +13,28 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
 namespace Escape_Quiz.Views
 {
     /// <summary>
-    /// Interaktionslogik für Wahrheitswerttabelle.xaml
+    /// Interaktionslogik für MC_KommazahlenView.xaml
     /// </summary>
-    public partial class Wahrheitswerttabelle : UserControl
+    public partial class MC_KommazahlenView : UserControl
     {
         private Frame frame;
-        public Wahrheitswerttabelle(Frame frame)
+        public MC_KommazahlenView(Frame frame)
         {
             InitializeComponent();
             this.frame = frame;
         }
 
-        private void Button_NextQuestion(object sender, RoutedEventArgs e)
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
-            this.FrameQuestion.Navigate(new SC_Datenspeicher_View(this.FrameQuestion));
+
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-
+            this.frame.Navigate(new Freitext2View(this.frame));
         }
     }
 }

@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Escape_Quiz.Views"
+             xmlns:local="clr-namespace:Escape_Quiz"
+             xmlns:Views="clr-namespace:Escape_Quiz.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <!-- TODO Generisches Layout fuer lueckentext Aufgaben erstellen! -->
@@ -32,7 +33,7 @@
 
         
         <Button Content="Nächste Frage" x:Name="ClozeViewNext" HorizontalAlignment="Center" Grid.Row="8" Grid.Column="4"/>
-        <CheckBox Content="CheckBox" Grid.Column="3" HorizontalAlignment="Left" Margin="77,0,0,0" VerticalAlignment="Center" Checked="CheckBox_Checked"/>
+        
     <!-- TODO Mehr Optionen -->
     
     </Grid>

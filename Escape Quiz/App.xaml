@@ -5,5 +5,11 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
+        <Thickness x:Key="NextQuestionMargin">515,310,0,0</Thickness>
+        <Style x:Key="DarkButton">
+            <Style.Setters>
+                
+            </Style.Setters>
+        </Style>
     </Application.Resources>
 </Application>

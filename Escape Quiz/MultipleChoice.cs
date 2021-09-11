@@ -39,7 +39,7 @@ public class MultipleChoice
 				optionsTrue.Append(answerbool);
 			}
 
-			// Geht das Antwortenstring Arraz durch und schaut ob an der Stelle
+			// Geht das Antwortenstring Array durch und schaut ob an der Stelle
 			// im AntwortenwahrheitenArray vermekt ist, ob die Antwort richtig ist.
 			for (int i = 0; i < options.Length; i++)
 			{

@@ -13,29 +13,23 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
 namespace Escape_Quiz.Views
 {
     /// <summary>
-    /// Interaktionslogik für Wahrheitswerttabelle.xaml
+    /// Interaktionslogik für SC_PrivateIP.xaml
     /// </summary>
-    public partial class Wahrheitswerttabelle : UserControl
+    public partial class SC_PrivateIP : UserControl
     {
         private Frame frame;
-        public Wahrheitswerttabelle(Frame frame)
+        public SC_PrivateIP(Frame frame)
         {
-            InitializeComponent();
             this.frame = frame;
+            InitializeComponent();
         }
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-            this.FrameQuestion.Navigate(new SC_Datenspeicher_View(this.FrameQuestion));
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            this.frame.Navigate(new LT_PraefixView(this.frame));
         }
     }
 }

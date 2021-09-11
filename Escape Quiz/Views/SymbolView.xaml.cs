@@ -13,16 +13,15 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
 namespace Escape_Quiz.Views
 {
     /// <summary>
-    /// Interaktionslogik für Wahrheitswerttabelle.xaml
+    /// Interaktionslogik für SymbolView.xaml
     /// </summary>
-    public partial class Wahrheitswerttabelle : UserControl
+    public partial class SymbolView : UserControl
     {
         private Frame frame;
-        public Wahrheitswerttabelle(Frame frame)
+        public SymbolView(Frame frame)
         {
             InitializeComponent();
             this.frame = frame;
@@ -30,12 +29,7 @@ namespace Escape_Quiz.Views
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-            this.FrameQuestion.Navigate(new SC_Datenspeicher_View(this.FrameQuestion));
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            this.frame.Navigate(new SC_PrivateIP(this.frame));
         }
     }
 }
