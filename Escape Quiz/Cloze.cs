@@ -33,4 +33,4 @@ namespace Escape_Quiz
  * 
  * In Button
  *  this.MainFrame.Navigate(new Quiz1View);
- *  /
+ */
