@@ -9,11 +9,14 @@
     <Grid>
         <Label Content="Beantwortet die folgende Frage (Es ist nur eine Antwort richtig!)&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFB" FontFamily="Arial" FontSize="20"/>
         <Label Content="Ein Computer liest und speichert Daten immer in dieser Form:&#xA;" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFB" FontFamily="Arial" FontSize="20"/>
+ 
         <CheckBox Content="Bild" HorizontalAlignment="Left" Margin="46,132,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White"/>
+        <CheckBox Content="Geräusch" HorizontalAlignment="Left" Margin="46,176,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <CheckBox Content="Wort" HorizontalAlignment="Left" Margin="46,220,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <CheckBox Content="Zahl" HorizontalAlignment="Left" Margin="319,132,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <CheckBox Content="Software" HorizontalAlignment="Left" Margin="319,176,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
+
         <Button Content="Nächste Frage" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_NextQuestion" FontFamily="Arial" FontSize="20" />
-        <CheckBox Content="Geräusch&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="46,176,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
-        <CheckBox Content="Wort&#xA;" HorizontalAlignment="Left" Margin="46,220,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
-        <CheckBox Content="Zahl&#xA;" HorizontalAlignment="Left" Margin="319,132,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
-        <CheckBox Content="Software&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="319,176,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
+
     </Grid>
 </UserControl>
