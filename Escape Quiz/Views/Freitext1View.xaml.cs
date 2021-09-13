@@ -28,7 +28,7 @@ namespace Escape_Quiz.Views
         }
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-            // this.frame.Navigate(new MC_Peripheriegeraete(this.frame));
+            this.frame.Navigate(new MC_Peripheriegeraete(this.frame));
         }
     }
 }

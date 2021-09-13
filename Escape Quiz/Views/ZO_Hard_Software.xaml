@@ -34,7 +34,7 @@
         
         <Label Content="H&#xD;&#xA;A&#xD;&#xA;R&#xD;&#xA;D&#xD;&#xA;W&#xD;&#xA;A&#xD;&#xA;R&#xD;&#xA;E" HorizontalAlignment="Left" Margin="257,97,0,0" VerticalAlignment="Top" Height="175" FontSize="18" FontFamily="Arial" Foreground="White"/>
 
-        <Button Content="Quiz beenden" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_Ende" FontFamily="Arial" FontSize="20" />
-
+        <Button Content="Quiz beenden" Foreground="#FF45DC0B" Background="Black" BorderBrush="#FF45DC0B" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_Ende" FontFamily="Arial" FontSize="20" />
+        <ProgressBar HorizontalAlignment="Left" Height="17" Margin="377,-47,0,0" VerticalAlignment="Top" Width="397" Background="#FF050505" BorderBrush="#FF45DC0B" Minimum="0" Maximum="100" Value="100"/>
     </Grid>
 </UserControl>

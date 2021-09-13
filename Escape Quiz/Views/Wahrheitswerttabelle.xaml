@@ -5,28 +5,29 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Escape_Quiz"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800" Background="Black">
 
 
         <Grid Margin="0,76,0,-0.4">
-        <Image HorizontalAlignment="Left" Height="44" Margin="0,-74,0,0" VerticalAlignment="Top" Width="799" Source="/Assets/Start.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="44" Margin="0,-74,0,0" VerticalAlignment="Top" Width="799" Source="/Views/Start.png" Stretch="Fill"/>
 
         <Frame x:Name="FrameQuestion" Margin="0,0,0,0" Background="Black">
             <Frame.Content>
                 <Grid>
-                    <Image HorizontalAlignment="Left" Height="105" Margin="54,84,0,0" VerticalAlignment="Top" Width="49" Source="/Assets/Wahrheitswerttabelle 1 Aussage.png"/>
-                    <Image HorizontalAlignment="Left" Height="173" Margin="142,37,0,0" VerticalAlignment="Top" Width="95" Source="/Assets/Wahrheitswerttabelle 2 Aussagen.png"/>
-                    <Image HorizontalAlignment="Left" Height="307" Margin="282,0,0,0" VerticalAlignment="Top" Width="140" Source="/Assets/Wahrheitswerttabelle 3 Aussagen.png"/>
-                    <Label Content="Bla Bla Bla&#xD;&#xA;&#xD;&#xA;Fülle die Lücken in der letzten Wahrheitstabelle aus" HorizontalAlignment="Left" Margin="507,10,0,0" VerticalAlignment="Top"/>
-                    
-                    <!-- TODO Farbe Klaeren fuer Hintergrund -->
-
-                    <Button Content="Nächste Frage" HorizontalAlignment="Left" Margin="558,287,0,0" Width="197" Height="67" VerticalAlignment="Top"  FontFamily="Arial" FontSize="20" Click="Button_NextQuestion" />
-
+                    <Image HorizontalAlignment="Left" Height="105" Margin="54,84,0,0" VerticalAlignment="Top" Width="49" Source="/Views/Wahrheitswerttabelle 1 Aussage.png"/>
+                    <Image HorizontalAlignment="Left" Height="173" Margin="142,37,0,0" VerticalAlignment="Top" Width="95" Source="/Views/Wahrheitswerttabelle 2 Aussagen.png"/>
+                    <Image HorizontalAlignment="Left" Height="307" Margin="282,0,0,0" VerticalAlignment="Top" Width="140" Source="/Views/Wahrheitswerttabelle 3 Aussagen.png"/>
+                    <TextBox x:Name="FirstTB" HorizontalAlignment="Left" Margin="329,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="44" Background="#FFF9F0F0" TextChanged="TextBox_TextChanged"/>
+                    <TextBlock x:Name="SecondTB" HorizontalAlignment="Left" Margin="516,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="269" Width="195" Foreground="White" FontSize="16"><Run Text="Wahrheitswerttabellen sind unerlässlich, um logische Ausdrücke zu visualisieren und zu verstehen. "/><LineBreak/><Run/><LineBreak/><Run Text="Kannst du mit Hilfe der beiden ersten Beispiele die Lücken der letzten Tabelle ergänzen? "/></TextBlock>
+                    <TextBox x:Name="ThirdTB" HorizontalAlignment="Left" Margin="375,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="44" Background="#FFF9F0F0" TextChanged="TextBox_TextChanged"/>
+                    <TextBox x:Name="FourthTB" HorizontalAlignment="Left" Margin="284,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="44" Background="#FFF9F0F0" TextChanged="TextBox_TextChanged"/>
+                    <TextBox HorizontalAlignment="Left" Margin="375,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="44" Background="#FFF9F0F0" TextChanged="TextBox_TextChanged" RenderTransformOrigin="2.563,1.767"/>
+                    <Button Content="Nächste Frage" Foreground="#FF45DC0B" Background="Black" BorderBrush="#FF45DC0B" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_NextQuestion" FontFamily="Arial" FontSize="20" />
+                    <ProgressBar HorizontalAlignment="Left" Height="17" Margin="377,-47,0,0" VerticalAlignment="Top" Width="397" Background="#FF050505" BorderBrush="#FF45DC0B" Minimum="0" Maximum="100" Value="0"/>
                 </Grid>
             </Frame.Content>
         </Frame>
-        <ProgressBar HorizontalAlignment="Left" Height="10" Margin="676,-60,0,0" VerticalAlignment="Top" Width="100"/>
+        
 
 
         <!-- Click="Button_NextQuestion" -->

@@ -16,7 +16,7 @@
         <!-- TODO Nachschauen was die andere IP Adresse ist! -->
         <CheckBox Content="169.254.2.66" HorizontalAlignment="Left" Margin="319,176,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
 
-        <Button Content="Nächste Frage" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_NextQuestion" FontFamily="Arial" FontSize="20" />
-
+        <Button Content="Nächste Frage" Foreground="#FF45DC0B" Background="Black" BorderBrush="#FF45DC0B" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_NextQuestion" FontFamily="Arial" FontSize="20" />
+        <ProgressBar HorizontalAlignment="Left" Height="17" Margin="377,-47,0,0" VerticalAlignment="Top" Width="397" Background="#FF050505" BorderBrush="#FF45DC0B" Minimum="0" Maximum="100" Value="55"/>
     </Grid>
 </UserControl>

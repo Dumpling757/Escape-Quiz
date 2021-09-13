@@ -8,6 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Start.png" />
+    <None Remove="Views\Bluetooth.png" />
+    <None Remove="Views\LAN.png" />
+    <None Remove="Views\Start.png" />
+    <None Remove="Views\USB.png" />
+    <None Remove="Views\Wahrheitswerttabelle 1 Aussage.png" />
+    <None Remove="Views\Wahrheitswerttabelle 2 Aussagen.png" />
+    <None Remove="Views\Wahrheitswerttabelle 3 Aussagen.png" />
+    <None Remove="Views\Wlan.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <COMReference Include="SystemMonitor">
       <WrapperTool>tlbimp</WrapperTool>
       <VersionMinor>7</VersionMinor>
@@ -17,6 +29,18 @@
       <Isolated>false</Isolated>
       <EmbedInteropTypes>true</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Start.png" />
+    <Resource Include="Views\Bluetooth.png" />
+    <Resource Include="Views\LAN.png" />
+    <Resource Include="Views\Start.png" />
+    <Resource Include="Views\USB.png" />
+    <Resource Include="Views\Wahrheitswerttabelle 1 Aussage.png" />
+    <Resource Include="Views\Wahrheitswerttabelle 2 Aussagen.png" />
+    <Resource Include="Views\Wahrheitswerttabelle 3 Aussagen.png" />
+    <Resource Include="Views\Wlan.png" />
   </ItemGroup>
 
 </Project>

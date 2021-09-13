@@ -31,7 +31,8 @@ namespace Escape_Quiz.Views
         {
             MessageBox.Show("Herzlichen Glückwunsch!\n\n"
                 + "ihr habt das Quiz erfolgreich bestanden.\n\n" 
-                + "\t " + "/10 richtig."); //Hier Ausgabe der richtigen Anzahl an Fragen
+                + "\t " + "/10 richtig.\n\n"
+                + "Geht nun weiter und denkt an das Lösungswort."); //Hier Ausgabe der richtigen Anzahl an Fragen
 
             Application.Current.MainWindow.Close();
         }

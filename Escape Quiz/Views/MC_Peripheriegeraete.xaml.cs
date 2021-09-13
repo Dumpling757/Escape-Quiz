@@ -16,22 +16,25 @@ using System.Windows.Shapes;
 namespace Escape_Quiz.Views
 {
     /// <summary>
-    /// Interaktionslogik für LT_Zahlensystem.xaml
+    /// Interaktionslogik für MC_Peripheriegeraete.xaml
     /// </summary>
-    public partial class LT_Zahlensystem : UserControl
+    public partial class MC_Peripheriegeraete : UserControl
     {
         private Frame frame;
-        public LT_Zahlensystem(Frame frame)
+        public MC_Peripheriegeraete(Frame frame)
         {
             InitializeComponent();
             this.frame = frame;
         }
 
-       
-
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
             this.frame.Navigate(new SymbolView(this.frame));
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
