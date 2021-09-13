@@ -21,6 +21,7 @@ namespace Escape_Quiz.Views
     public partial class MC_KommazahlenView : UserControl
     {
         private Frame frame;
+        private int checkI;
         public MC_KommazahlenView(Frame frame)
         {
             InitializeComponent();
@@ -34,7 +35,28 @@ namespace Escape_Quiz.Views
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-            this.frame.Navigate(new Freitext2View(this.frame));
+            if (checkI==0 && (bool)Int.IsChecked && (bool)Float.IsChecked) { MessageBox.Show("Its right!"); }
+            else if(checkI==0) { MessageBox.Show("Leider nicht richtig.\nSchau dir die Lösungen an und gehe dann weiter zur nächsten Aufgabe!"); }
+
+            Int.Foreground = new SolidColorBrush(Colors.Green);
+            Int.IsEnabled = false;
+
+            Float.Foreground = new SolidColorBrush(Colors.Green);
+            Float.IsEnabled = false;
+
+            Bool.Foreground = new SolidColorBrush(Colors.Red);
+            Bool.IsEnabled = false;
+
+            Double.Foreground = new SolidColorBrush(Colors.Red);
+            Double.IsEnabled = false;
+
+            if (checkI > 0)
+            {
+                this.frame.Navigate(new Freitext2View(this.frame));
+            }
+
+            checkI++;
+            
         }
     }
 }

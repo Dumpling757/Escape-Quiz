@@ -9,13 +9,13 @@
     <Grid>
         <Label Content="Beantwortet die folgende Frage (Es sind mehrere Antworten richtig!)&#xA;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFB" FontFamily="Arial" FontSize="20"/>
         <Label Content="Welche Geräte gehören zu den Peripheriegeräten?&#xA;" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFB" FontFamily="Arial" FontSize="20"/>
-        <CheckBox x:Name Content="Sound- und Grafikkarte&#xA;" HorizontalAlignment="Left" Margin="46,132,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="SuG" Content="Sound- und Grafikkarte&#xA;" HorizontalAlignment="Left" Margin="46,132,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" Checked="CheckBox_Checked"/>
         <Button Content="Nächste Frage" Foreground="#FF45DC0B" Background="Black" BorderBrush="#FF45DC0B" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_NextQuestion" FontFamily="Arial" FontSize="20" />
-        <CheckBox Content="Monitor" HorizontalAlignment="Left" Margin="46,176,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" Checked="CheckBox_Checked" />
-        <CheckBox Content="Arbeitsspeicher&#xA;" HorizontalAlignment="Left" Margin="314,215,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" Checked="CheckBox_Checked" />
-        <CheckBox Content="Maus" HorizontalAlignment="Left" Margin="314,132,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
-        <CheckBox Content="Tastatur" HorizontalAlignment="Left" Margin="46,215,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" Checked="CheckBox_Checked" />
-        <CheckBox Content="CPU" HorizontalAlignment="Left" Margin="314,176,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" Checked="CheckBox_Checked" />
+        <CheckBox x:Name="Monitor" Content="Monitor" HorizontalAlignment="Left" Margin="46,176,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" Checked="CheckBox_Checked" />
+        <CheckBox x:Name="RAM" Content="Arbeitsspeicher&#xA;" HorizontalAlignment="Left" Margin="314,215,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" Checked="CheckBox_Checked" />
+        <CheckBox x:Name="Maus" Content="Maus" HorizontalAlignment="Left" Margin="314,132,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <CheckBox x:Name="Tastatur" Content="Tastatur" HorizontalAlignment="Left" Margin="46,215,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" Checked="CheckBox_Checked" />
+        <CheckBox x:Name="CPU" Content="CPU" HorizontalAlignment="Left" Margin="314,176,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" Checked="CheckBox_Checked" />
         <ProgressBar HorizontalAlignment="Left" Height="17" Margin="377,-47,0,0" VerticalAlignment="Top" Width="397" Background="#FF050505" BorderBrush="#FF45DC0B" Minimum="0" Maximum="100" Value="33"/>
     </Grid>
 </UserControl>
