@@ -12,6 +12,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="43,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="214" Width="690" Foreground="White" FontFamily="Arial" FontSize="20"><Run Text="Ein Client im Netz der FI194 GmbH hat die IP 172.16.10.10. Leider hat der Admin einen Fehler in den Netzwerkadaptereinstellungen gemacht. Die Subnetzmaske, die er eingetragen hat ist 255.255.0.0"/><Run Text=", das entspricht dem Präfix"/><Run Text="&#x9;.     . "/><Run Text="Die Subnetzmaske soll allerdings das Präfix 32 haben. Die richtige Subnetzmaske ist dementsprechend"/><Run Text="&#x9;"/><Run Text="&#x9;&#x9;     "/><Run Text=". "/></TextBlock>
         <TextBox x:Name="LT_TB1" HorizontalAlignment="Left" Height="23" Margin="104,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" />
         <TextBox x:Name="LT_TB2" HorizontalAlignment="Left" Height="23" Margin="447,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" />
-        <Button Content="Nächste Frage" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_NextQuestion" FontFamily="Arial" FontSize="20" />
+        <Button Content="Nächste Frage" Foreground="#FF45DC0B" Background="Black" BorderBrush="#FF45DC0B" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_NextQuestion" FontFamily="Arial" FontSize="20" />
+        <ProgressBar HorizontalAlignment="Left" Height="17" Margin="377,-47,0,0" VerticalAlignment="Top" Width="397" Background="#FF050505" BorderBrush="#FF45DC0B" Minimum="0" Maximum="100" Value="66"/>
     </Grid>
 </UserControl>

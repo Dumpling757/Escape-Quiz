@@ -52,5 +52,10 @@ namespace Escape_Quiz
 
             this.MainFrame.Navigate(new Views.Wahrheitswerttabelle(this.MainFrame));
         }
+
+        private void MainFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }

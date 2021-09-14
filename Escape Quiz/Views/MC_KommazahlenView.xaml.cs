@@ -21,10 +21,7 @@ namespace Escape_Quiz.Views
     public partial class MC_KommazahlenView : UserControl
     {
         private Frame frame;
-        private MultipleChoice multipleChoice;
-
-        private int clickI;
-
+        private int checkI;
         public MC_KommazahlenView(Frame frame)
         {
             InitializeComponent();
