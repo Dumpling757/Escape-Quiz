@@ -38,21 +38,21 @@ namespace Escape_Quiz.Views
 
             if (FirstTB.Text == "1")
             {
-                FirstTB.Background;
+               // FirstTB.Background;
             }
 
             if(ThirdTB.Text == "1")
             {
-                ThirdTB.Background;
+               // ThirdTB.Background;
             }
 
             if(FourthTB.Text == "1")
             {
-                FourthTB.Background;
+               // FourthTB.Background;
             }
             if(FifthTB.Text == "1")
             {
-                FifthTB.Background;
+               // FifthTB.Background;
             }
 
             if(clickI > 0)
