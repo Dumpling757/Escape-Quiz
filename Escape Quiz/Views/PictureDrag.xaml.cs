@@ -26,11 +26,14 @@ namespace Escape_Quiz.Views
         {
             this.frame = frame;
             InitializeComponent();
+
         }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
             //Setzt die Eigenschaft dass Daten in das Objekt reingedropped werden dürfen
+            ButtonTarget.Content = "Drop here!";
+
             ButtonTarget.AllowDrop = true;
             lbDrop.Visibility = Visibility.Hidden;
         }
@@ -53,7 +56,7 @@ namespace Escape_Quiz.Views
             }
             else
             {
-                e.Effects = DragDropEffects.None;
+                //e.Effects = DragDropEffects.None;
             }
         }
 
@@ -64,9 +67,11 @@ namespace Escape_Quiz.Views
 
         private void ButtonTarget_Drop(object sender, DragEventArgs e)
         {
-            lbDropHere.Visibility = Visibility.Hidden;           
-            ButtonTarget.Content = (string)e.Data.GetData(DataFormats.Text);
-            ButtonTarget.Foreground = new SolidColorBrush(Colors.White);
+            // lbDrop.Visibility = Visibility.Hidden;
+            // 
+            // TODO String wird nicht aktualisiert
+            ButtonTarget.Content = (string)e.Data.GetData(DataFormats.StringFormat, true) as string;
+            ButtonTarget.Foreground = new SolidColorBrush(Colors.Green);
         }
     }
 }

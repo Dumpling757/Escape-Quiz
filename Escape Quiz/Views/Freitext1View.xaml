@@ -8,7 +8,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="43,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="71" Width="680" Foreground="White" FontFamily="Arial" FontSize="20"><Run Text="Wofür steht die Abkürzung HTML?"/><Run Text=" "/><LineBreak/><Run Text="Schreibt die Lösung in die unten stehende Box. "/><LineBreak/><Run/></TextBlock>
-        <TextBox HorizontalAlignment="Left" Height="47" Margin="43,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="680"/>
+        <TextBox x:Name="TB_Box" HorizontalAlignment="Left" Height="47" Margin="43,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="680"/>
         <Button Content="Nächste Frage" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_NextQuestion" FontFamily="Arial" FontSize="20" />
     </Grid>
 </UserControl>

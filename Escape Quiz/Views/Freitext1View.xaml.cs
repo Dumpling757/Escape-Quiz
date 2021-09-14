@@ -21,6 +21,8 @@ namespace Escape_Quiz.Views
     public partial class Freitext1View : UserControl
     {
         private Frame frame;
+
+        private int clickI;
         public Freitext1View(Frame frame)
         {
             this.frame = frame;
@@ -28,7 +30,8 @@ namespace Escape_Quiz.Views
         }
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-            // this.frame.Navigate(new MC_Peripheriegeraete(this.frame));
+
+             this.frame.Navigate(new SymbolView(this.frame));
         }
     }
 }

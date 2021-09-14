@@ -14,7 +14,7 @@
         <Label Content="Button3" x:Name="Button3" HorizontalAlignment="Left" Margin="109,0,0,0" VerticalAlignment="Center" MouseDown="Button_MouseDown" Foreground="Green"/>
 
 
-        <Label Content="Drop Here!!" x:Name="ButtonTarget" HorizontalAlignment="Left" Margin="591,177,0,0" VerticalAlignment="Top" DragEnter="ButtonTarget_DragEnter" DragLeave="ButtonTarget_DragLeave" Drop="ButtonTarget_Drop" Foreground="Aqua" />
+        <Label x:Name="ButtonTarget" HorizontalAlignment="Left" Margin="591,177,0,0" VerticalAlignment="Top" DragEnter="ButtonTarget_DragEnter" DragLeave="ButtonTarget_DragLeave" Drop="ButtonTarget_Drop" Foreground="Aqua" />
         <Label x:Name="lbDrop" Content="Drop it here!" HorizontalAlignment="Left" Margin="591,137,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Red"/>
 
 

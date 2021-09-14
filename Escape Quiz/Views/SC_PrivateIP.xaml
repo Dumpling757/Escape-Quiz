@@ -9,12 +9,11 @@
     <Grid>
         <Label Content="Beantwortet die folgende Frage (Es ist nur eine Antwort richtig!)&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFB" FontFamily="Arial" FontSize="20"/>
         <Label Content="Welcher der folgenden IP Adressen ist eine private Adresse?&#xA;" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFB" FontFamily="Arial" FontSize="20"/>
-        
-        <CheckBox Content="127.0.0.1" HorizontalAlignment="Left" Margin="46,132,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White"/>
-        <CheckBox Content="192.168.1.25" HorizontalAlignment="Left" Margin="46,176,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
-        <CheckBox Content="192.168.1.25" HorizontalAlignment="Left" Margin="319,132,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
-        <!-- TODO Nachschauen was die andere IP Adresse ist! -->
-        <CheckBox Content="169.254.2.66" HorizontalAlignment="Left" Margin="319,176,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
+
+        <RadioButton GroupName="IPQuestions" x:Name="localhost" Content="127.0.0.1" HorizontalAlignment="Left" Margin="46,132,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White"/>
+        <RadioButton GroupName="IPQuestions" x:Name="privIP" Content="192.168.1.25" HorizontalAlignment="Left" Margin="46,176,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <RadioButton GroupName="IPQuestions" x:Name="pubIP" Content="11.47.255.90" HorizontalAlignment="Left" Margin="319,132,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <RadioButton GroupName="IPQuestions" x:Name="APIPA" Content="169.254.2.66" HorizontalAlignment="Left" Margin="319,176,0,0" VerticalAlignment="Top" Height="39" Width="268" FontSize="16" FontFamily="Arial" Foreground="White" />
 
         <Button Content="Nächste Frage" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_NextQuestion" FontFamily="Arial" FontSize="20" />
 

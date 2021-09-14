@@ -21,6 +21,7 @@ namespace Escape_Quiz.Views
     public partial class SC_Datenspeicher_View : UserControl
     {
         private Frame frame;
+        private int clickI;
         public SC_Datenspeicher_View(Frame frame)
         {
             InitializeComponent();
@@ -29,7 +30,32 @@ namespace Escape_Quiz.Views
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-            this.frame.Navigate(new Freitext1View(this.frame));
+            
+            if ((bool)Zahl.IsChecked)
+            {
+                
+            }
+
+            Zahl.Foreground = new SolidColorBrush(Colors.Green);
+            Zahl.IsEnabled = false;
+
+            Bild.Foreground = new SolidColorBrush(Colors.Red);
+            Bild.IsEnabled = false;
+            Geräusch.Foreground = new SolidColorBrush(Colors.Red);
+            Geräusch.IsEnabled = false;
+            Wort.Foreground = new SolidColorBrush(Colors.Red);
+            Wort.IsEnabled = false;
+            Software.Foreground = new SolidColorBrush(Colors.Red);
+            Software.IsEnabled = false;
+
+            
+            if(clickI > 0)
+            {
+                this.frame.Navigate(new Freitext1View(this.frame));
+            }
+
+            clickI++;
+            
         }
     }
         

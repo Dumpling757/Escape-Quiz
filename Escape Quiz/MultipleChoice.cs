@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 
 // Datentyp zur Interaktion mit einer Multiple / Single Choice Frage
 public class MultipleChoice
 {
 	// enthaelt welche Antwort die richtige ist.
-	private bool[] optionsTrue;
+	private List<bool> optionsTrue = new List<bool>();
 
 	// Antwortinhalt
 	private string[] options;
@@ -12,7 +13,10 @@ public class MultipleChoice
 	// Ob es Single oder Multiple Choice ist
 	private bool singleAnswer;
 
-
+	public void SetOptionsTrue(List<bool> mOptionsTrue)
+    {
+		optionsTrue = mOptionsTrue;
+    }
 
 	public MultipleChoice(bool singleAnswer, string[] answerStrings)
 	{
@@ -26,17 +30,21 @@ public class MultipleChoice
 			
 		}
 	}
+	public MultipleChoice(bool singleAnswer)
+    {
+		this.singleAnswer = singleAnswer;
+    }
 
 
 	// Ueberprueft ob die gegebene Antwort richtig ist.
-	public bool CheckAnswer(bool[] answers)
+	public bool CheckAnswer(List<bool> answers)
 	{
 		if (singleAnswer)
 		{
 			// Uebergibt die Richtigkeit der Antworten ins Objekt
 			foreach (bool answerbool in answers)
 			{
-				optionsTrue.Append(answerbool);
+				optionsTrue.Add (answerbool);
 			}
 
 			// Geht das Antwortenstring Array durch und schaut ob an der Stelle
