@@ -22,6 +22,8 @@ namespace Escape_Quiz.Views
     public partial class Wahrheitswerttabelle : UserControl
     {
         private Frame frame;
+
+        private int clickI;
         public Wahrheitswerttabelle(Frame frame)
         {
             InitializeComponent();
@@ -30,7 +32,36 @@ namespace Escape_Quiz.Views
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-            this.FrameQuestion.Navigate(new SC_Datenspeicher_View(this.FrameQuestion));
+
+            Brush right = new SolidColorBrush(Colors.Green);
+            Brush wrong = new SolidColorBrush(Colors.Red);
+
+            if (FirstTB.Text == "1")
+            {
+                FirstTB.Background;
+            }
+
+            if(ThirdTB.Text == "1")
+            {
+                ThirdTB.Background;
+            }
+
+            if(FourthTB.Text == "1")
+            {
+                FourthTB.Background;
+            }
+            if(FifthTB.Text == "1")
+            {
+                FifthTB.Background;
+            }
+
+            if(clickI > 0)
+            {
+                this.FrameQuestion.Navigate(new SC_Datenspeicher_View(this.FrameQuestion));
+
+            }
+            clickI++;
+            ButtonNext.Content = "Nächste Frage";
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
