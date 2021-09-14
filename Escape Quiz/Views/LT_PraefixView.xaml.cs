@@ -67,6 +67,7 @@ namespace Escape_Quiz.Views
                 this.frame.Navigate(new MC_KommazahlenView(this.frame));
             }
             clickI++;
+            ButtonNext.Content = "Náchste Frage"; 
 
         }
     }

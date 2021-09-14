@@ -52,6 +52,7 @@ namespace Escape_Quiz.Views
 
             }
             clickI++;
+            ButtonNext.Content = "Nächste Frage";
         }
     }
 }
