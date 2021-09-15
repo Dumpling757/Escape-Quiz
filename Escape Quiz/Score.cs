@@ -8,19 +8,19 @@ namespace Escape_Quiz
 {
     class Score
     {
-        private int finalScore;
+        private static int finalScore;
 
         public Score()
         {
             finalScore = 0;
         }
 
-        public void OneUp()
+        public static void OneUp()
         {
             finalScore++;
         }
 
-        public int getScore()
+        public static int GetScore()
         {
             return finalScore;
         }

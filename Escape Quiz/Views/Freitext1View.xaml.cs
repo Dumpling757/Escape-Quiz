@@ -32,6 +32,8 @@ namespace Escape_Quiz.Views
         {
 
              this.frame.Navigate(new SymbolView(this.frame));
+
+            Score.OneUp();
         }
     }
 }
