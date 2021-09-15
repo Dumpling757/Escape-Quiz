@@ -40,8 +40,9 @@ namespace Escape_Quiz.Views
 
         private void Button_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            Label labelstring = (Label)sender;
             Label label = ButtonTarget;
-            DragDrop.DoDragDrop(label, label.Content, DragDropEffects.Copy);
+            DragDrop.DoDragDrop(label, labelstring.Content, DragDropEffects.Copy);
             
         }
 

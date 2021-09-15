@@ -50,7 +50,8 @@ namespace Escape_Quiz
                 "HINWEIS\n" +
                 "Am Ende jeder Frage bekommst du Informationen, die dir nach dem Quiz sehr hilfreich sein könnten. Notiere sie!!");
 
-            this.MainFrame.Navigate(new Views.Wahrheitswerttabelle(this.MainFrame));
+            // this.MainFrame.Navigate(new Views.Wahrheitswerttabelle(this.MainFrame));
+            this.MainFrame.Navigate(new Views.PictureDrag(this.MainFrame));
         }
 
         private void MainFrame_Navigated(object sender, NavigationEventArgs e)
