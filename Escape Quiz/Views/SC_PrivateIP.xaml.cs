@@ -38,7 +38,6 @@ namespace Escape_Quiz.Views
             }
             privIP.Foreground = new SolidColorBrush(Colors.Green);
             privIP.IsEnabled = false;
-
             localhost.Foreground = new SolidColorBrush(Colors.Red);
             localhost.IsEnabled = false;
             pubIP.Foreground = new SolidColorBrush(Colors.Red);
