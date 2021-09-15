@@ -36,26 +36,33 @@ namespace Escape_Quiz.Views
             Brush right = new SolidColorBrush(Colors.Green);
             Brush wrong = new SolidColorBrush(Colors.Red);
 
-            if (FirstTB.Text == "1")
+            FirstTB.Background = wrong;
+            ThirdTB.Background = wrong;
+            FourthTB.Background = wrong;
+            FifthTB.Background = wrong;
+
+            if (FirstTB.Text == "0")
             {
-               // FirstTB.Background;
+                FirstTB.Background = right;
             }
+            
 
             if(ThirdTB.Text == "1")
             {
-               // ThirdTB.Background;
+               ThirdTB.Background  = right;
             }
 
             if(FourthTB.Text == "1")
             {
-               // FourthTB.Background;
+               FourthTB.Background = right;
             }
             if(FifthTB.Text == "1")
             {
-               // FifthTB.Background;
+                FifthTB.Background = right;
             }
 
-            if(clickI > 0)
+
+            if (clickI > 0)
             {
                 this.FrameQuestion.Navigate(new SC_Datenspeicher_View(this.FrameQuestion));
 
@@ -64,10 +71,6 @@ namespace Escape_Quiz.Views
             ButtonNext.Content = "Nächste Frage";
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
 
     }
 }
