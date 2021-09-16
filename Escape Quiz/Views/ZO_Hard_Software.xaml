@@ -15,20 +15,20 @@
         <TextBlock HorizontalAlignment="Left" Margin="289,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White"/>
         <TextBlock HorizontalAlignment="Left" Margin="289,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White"/>
 
-        <Button HorizontalAlignment="Left" Margin="629,142,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Arbeits-&#xD;&#xA;speicher" FontFamily="Arial" FontSize="16"/>
-        <Button HorizontalAlignment="Left" Margin="629,97,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="BIOS" FontFamily="Arial" FontSize="16"/>
-        <Button HorizontalAlignment="Left" Margin="629,187,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Maus" FontFamily="Arial" FontSize="16"/>
-        <Button HorizontalAlignment="Left" Margin="629,232,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Word" FontFamily="Arial" FontSize="16"/>
+        <Label x:Name="lbRAM" HorizontalAlignment="Left" Margin="629,142,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Arbeits-&#xD;&#xA;speicher" FontFamily="Arial" FontSize="16"/>
+        <Label x:Name="lbBIOS" HorizontalAlignment="Left" Margin="629,97,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="BIOS" FontFamily="Arial" FontSize="16"/>
+        <Label x:Name="lbMaus" HorizontalAlignment="Left" Margin="629,187,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Maus" FontFamily="Arial" FontSize="16"/>
+        <Label x:Name="lbWord" HorizontalAlignment="Left" Margin="629,232,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Word" FontFamily="Arial" FontSize="16"/>
         
         <TextBlock HorizontalAlignment="Left" Margin="41,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White"/>
         <TextBlock HorizontalAlignment="Left" Margin="41,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White"/>
         <TextBlock HorizontalAlignment="Left" Margin="289,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White"/>
         <TextBlock HorizontalAlignment="Left" Margin="289,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White"/>
         
-        <Button HorizontalAlignment="Left" Margin="515,97,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Betriebs-&#xD;&#xA;system" FontFamily="Arial" FontSize="16" RenderTransformOrigin="0.041,0.5"/>
-        <Button HorizontalAlignment="Left" Margin="515,142,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Festplatte" FontFamily="Arial" FontSize="16"/>
-        <Button HorizontalAlignment="Left" Margin="515,187,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Drucker-&#xD;&#xA;treiber" FontFamily="Arial" FontSize="16"/>
-        <Button HorizontalAlignment="Left" Margin="515,232,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Mainboard" FontFamily="Arial" FontSize="16"/>
+        <Label x:Name="lbOS" HorizontalAlignment="Left" Margin="515,97,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Betriebs-&#xD;&#xA;system" FontFamily="Arial" FontSize="16" RenderTransformOrigin="0.041,0.5"/>
+        <Label x:Name="lbHDD" HorizontalAlignment="Left" Margin="515,142,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Festplatte" FontFamily="Arial" FontSize="16" MouseDown="lbHDD_MouseDown"/>
+        <Label x:Name="lbDrucker" HorizontalAlignment="Left" Margin="515,187,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Drucker-&#xD;&#xA;treiber" FontFamily="Arial" FontSize="16"/>
+        <Label x:Name="lbMainboard" HorizontalAlignment="Left" Margin="515,232,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Mainboard" FontFamily="Arial" FontSize="16"/>
         
         <Label Content="S&#xD;&#xA;O&#xD;&#xA;F&#xD;&#xA;T&#xD;&#xA;W&#xD;&#xA;A&#xD;&#xA;R&#xD;&#xA;E" HorizontalAlignment="Left" Margin="9,97,0,0" VerticalAlignment="Top" Height="175" FontSize="18" FontFamily="Arial" Foreground="White"/>
         

@@ -36,5 +36,10 @@ namespace Escape_Quiz.Views
 
             Application.Current.MainWindow.Close();
         }
+
+        private void lbHDD_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }
