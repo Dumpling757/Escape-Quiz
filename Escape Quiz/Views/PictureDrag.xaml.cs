@@ -71,7 +71,7 @@ namespace Escape_Quiz.Views
             // lbDrop.Visibility = Visibility.Hidden;
             // 
             // TODO String wird nicht aktualisiert
-            ButtonTarget.Content = (string)e.Data.GetData(DataFormats.StringFormat, true) as string;
+            ButtonTarget.Content = (string)e.Data.GetData(DataFormats.StringFormat, true);
             ButtonTarget.Foreground = new SolidColorBrush(Colors.Green);
         }
     }
