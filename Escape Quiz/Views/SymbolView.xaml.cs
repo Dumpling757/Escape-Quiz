@@ -77,41 +77,30 @@ namespace Escape_Quiz.Views
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
+            Label[] labels = {bBluetooth, bLAN, bUSB, bWLAN };
+
+            TextBlock[] textBlocks = { tbBluetooth, tbLAN, tbUSB, tbWifi };
             int rightI = 0;
-            tbWifi.Background = wrong;
-            tbUSB.Background = wrong;
-            tbLAN.Background = wrong;
-            tbBluetooth.Background = wrong;
+            
 
-            if(tbWifi.Text == (string)bWLAN.Content)
+            foreach(TextBlock textBlock in textBlocks)
             {
-                tbWifi.Background = right;
-                rightI++;
-            }
-
-            if (tbBluetooth.Text == (string)bBluetooth.Content)
-            {
-                tbBluetooth.Background = right;
-                rightI++;
-
-            }
-
-            if (tbUSB.Text == (string)bUSB.Content)
-            {
-                tbUSB.Background = right;
-                rightI++;
-
-            }
-
-            if (tbLAN.Text == (string)bLAN.Content)
-            {
-                tbLAN.Background = right;
-                rightI++;
-
+                textBlock.Background = wrong;
+                foreach(Label label in labels)
+                {
+                    if(label.Content == textBlock.Text)
+                    {
+                        textBlock.Background = right;
+                        rightI++;
+                    }
+                }
             }
 
             if (rightI == 4)
+            {
                 Score.OneUp();
+            }
+                
 
             if (clickI > 0)
             {
