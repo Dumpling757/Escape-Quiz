@@ -15,15 +15,15 @@
         </Grid>
         <Label Content="Beim Testen eines Betriebssystems findet die Sicherheitssoftware Malware. &#xD;&#xA;Ordnen Sie die folgende Malware den nachstehenden Beschreibungen zu. " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="70" Grid.ColumnSpan="4" Width="780" FontSize="20" FontFamily="Arial" Foreground="White"/>
        
-        <TextBlock x:Name="tbBluetooth" HorizontalAlignment="Left" Margin="41,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White" DragEnter="tbBluetooth_DragEnter" Drop="tbBluetooth_Drop" DragLeave="tbBluetooth_DragLeave"/>
-        <TextBlock x:Name="tbWifi"  HorizontalAlignment="Left" Margin="41,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White" DragEnter="tbWifi_DragEnter" Drop="tbWifi_Drop" DragLeave="tbWifi_DragLeave"/>
-        <TextBlock x:Name="tbLAN" HorizontalAlignment="Left" Margin="289,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White" DragEnter="tbLAN_DragEnter" Drop="tbLAN_Drop" DragLeave="tbLAN_DragLeave"/>
-        <TextBlock x:Name="tbUSB" HorizontalAlignment="Left" Margin="289,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White" DragEnter="tbUSB_DragEnter" Drop="tbUSB_Drop" DragLeave="tbUSB_DragLeave"/>
+        <TextBlock x:Name="tbBluetooth" HorizontalAlignment="Left" Margin="41,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White" DragEnter="TextBlock_DragEnter" Drop="TextBlock_Drop" DragLeave="TextBlock_DragLeave"/>
+        <TextBlock x:Name="tbWifi"  HorizontalAlignment="Left" Margin="41,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White" DragEnter="TextBlock_DragEnter" Drop="TextBlock_Drop" DragLeave="TextBlock_DragLeave"/>
+        <TextBlock x:Name="tbLAN" HorizontalAlignment="Left" Margin="289,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White" DragEnter="TextBlock_DragEnter" Drop="TextBlock_Droprop" DragLeave="TextBlock_DragLeave"/>
+        <TextBlock x:Name="tbUSB" HorizontalAlignment="Left" Margin="289,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White" DragEnter="TextBlock_DragEnter" Drop="TextBlock_Drop" DragLeave="TextBlock_DragLeave"/>
 
-        <Label x:Name="bWLAN" HorizontalAlignment="Left" Margin="582,130,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="WLAN" FontFamily="Arial" FontSize="16" MouseDown="bWLAN_MouseDown"/>
-        <Label x:Name="bBluetooth" HorizontalAlignment="Left" Margin="582,85,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Bluetooth" FontFamily="Arial" FontSize="16" MouseDown="bBluetooth_MouseDown"/>
-        <Label x:Name="bLAN" HorizontalAlignment="Left" Margin="582,175,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="LAN" FontFamily="Arial" FontSize="16" MouseDown="bLAN_MouseDown"/>
-        <Label x:Name="bUSB" HorizontalAlignment="Left" Margin="582,220,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="USB" FontFamily="Arial" FontSize="16" MouseDown="bUSB_MouseDown"/>
+        <Label x:Name="bWLAN" HorizontalAlignment="Left" Margin="582,130,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="WLAN" FontFamily="Arial" FontSize="16" MouseDown="TextBlock_MouseDown"/>
+        <Label x:Name="bBluetooth" HorizontalAlignment="Left" Margin="582,85,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Bluetooth" FontFamily="Arial" FontSize="16" MouseDown="TextBlock_MouseDown"/>
+        <Label x:Name="bLAN" HorizontalAlignment="Left" Margin="582,175,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="LAN" FontFamily="Arial" FontSize="16" MouseDown="TextBlock_MouseDown"/>
+        <Label x:Name="bUSB" HorizontalAlignment="Left" Margin="582,220,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="USB" FontFamily="Arial" FontSize="16" MouseDown="TextBlock_MouseDown"/>
 
         <Button Content="Nächste Frage" Foreground="#FF45DC0B" Background="Black" BorderBrush="#FF45DC0B" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_NextQuestion" FontFamily="Arial" FontSize="20" />
         <ProgressBar HorizontalAlignment="Left" Height="17" Margin="377,-47,0,0" VerticalAlignment="Top" Width="397" Background="#FF050505" BorderBrush="#FF45DC0B" Minimum="0" Maximum="100" Value="44"/>
