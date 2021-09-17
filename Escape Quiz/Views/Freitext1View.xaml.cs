@@ -30,10 +30,19 @@ namespace Escape_Quiz.Views
         }
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
+            string answerstring = Answer.Text
 
-             this.frame.Navigate(new SymbolView(this.frame));
 
-            Score.OneUp();
+            if (answerstring == "hypertextmarkuplanguage")
+            {
+                Score.OneUp();
+            }
+
+            if(clickI > 0)
+            {
+                this.frame.Navigate(new SymbolView(this.frame));
+            }
+            clickI++;
         }
     }
 }
