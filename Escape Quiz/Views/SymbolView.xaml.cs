@@ -81,9 +81,15 @@ namespace Escape_Quiz.Views
 
             TextBlock[] textBlocks = { tbBluetooth, tbLAN, tbUSB, tbWifi };
             int rightI = 0;
-            
 
-            foreach(TextBlock textBlock in textBlocks)
+            /* Doppelte ForEach Schleife geht erst durch alle TextBlock elemente und vergleicht ein einzelnes TextBlock
+             * Element mit jedem Verfügbaren Label Inhalt. Wenn eine richtige Lösung gefunden wurde, wird der Zähler "rightI" erhöht.
+             * Sollte der Zähler am Ende auf 8 kommen, sind alle Felder richtig ausgefüllt.
+             * Sollte man bei Software oder Hardware eine Mehrfachnennung machen wird nur die erste Nennung als richtig erachtet.
+             * Im ersten Methodenrumpf wird jede Feld UI erstmal auf "Falsch" gesetzt, in der inneren ForEach Schleife wird dies wieder korrigiert.
+             */
+
+            foreach (TextBlock textBlock in textBlocks)
             {
                 textBlock.Background = wrong;
                 foreach(Label label in labels)
