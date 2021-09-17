@@ -35,8 +35,7 @@ namespace Escape_Quiz.Views
 
         private void Button_Ende(object sender, RoutedEventArgs e)
         {
-            string[] labels = { (string)lbBIOS.Content, (string)lbWord.Content, (string)lbOS.Content, (string)lbDrucker.Content,
-                (string)lbHDD.Content, (string)lbMaus.Content, (string)lbMainboard.Content, (string)lbRAM.Content };
+            Label[] labels = { lbBIOS, lbWord, lbOS, lbDrucker, lbHDD, lbMaus, lbMainboard, lbRAM };
 
 
 
@@ -55,9 +54,9 @@ namespace Escape_Quiz.Views
             foreach (TextBlock textBlock in textBlocks)
             {
                 textBlock.Background = wrong;
-                foreach (string label in labels)
+                foreach (Label label in labels)
                 {
-                    if (label == textBlock.Text)
+                    if (label.Content == textBlock.Text)
                     {
                         textBlock.Background = right;
                         rightI++;
