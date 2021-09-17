@@ -35,68 +35,36 @@ namespace Escape_Quiz.Views
 
         private void Button_Ende(object sender, RoutedEventArgs e)
         {
-            string[] software = { (string)lbBIOS.Content, (string)lbWord.Content, (string)lbOS.Content, (string)lbDrucker.Content };
-            string[] hardware = { (string)lbHDD.Content, (string)lbMaus.Content, (string)lbMainboard.Content, (string)lbRAM.Content};
+            string[] labels = { (string)lbBIOS.Content, (string)lbWord.Content, (string)lbOS.Content, (string)lbDrucker.Content,
+                (string)lbHDD.Content, (string)lbMaus.Content, (string)lbMainboard.Content, (string)lbRAM.Content };
 
-            Soft1.Background = Soft2.Background = Soft3.Background = Soft4.Background = wrong;
-            Hard1.Background = Hard2.Background = Hard3.Background = Hard4.Background = wrong;
+
+
+            TextBlock[] textBlocks = { Soft1, Soft2, Soft3, Soft4, Hard1, Hard2, Hard3, Hard4 };
+            
 
             int rightI = 0;
-            foreach (string soft in software)
-            {
-                if (soft == Soft1.Text)
-                {
-                    Soft1.Background = right;
-                    rightI++;
-                }
-                    
-                else if (soft == Soft2.Text)
-                {
-                    Soft2.Background = right;
-                    rightI++;
-                }
-                    
-                else if (soft == Soft3.Text)
-                {
-                    Soft3.Background = right;
-                    rightI++;
-                }
-                   
-                else if (soft == Soft4.Text)
-                {
-                    Soft4.Background = right;
-                    rightI++;
 
-                }
+            /* Doppelte ForEach Schleife geht erst durch alle TextBlock elemente und vergleicht ein einzelnes TextBlock
+             * Element mit jedem Verfügbaren Label Inhalt. Wenn eine richtige Lösung gefunden wurde, wird der Zähler "rightI" erhöht.
+             * Sollte der Zähler am Ende auf 8 kommen, sind alle Felder richtig ausgefüllt.
+             * Sollte man bei Software oder Hardware eine Mehrfachnennung machen wird nur die erste Nennung als richtig erachtet.
+             * Im ersten Methodenrumpf wird jede Feld UI erstmal auf "Falsch" gesetzt, in der inneren ForEach Schleife wird dies wieder korrigiert.
+             */
 
-            }
-            foreach(string hard in hardware)
+            foreach (TextBlock textBlock in textBlocks)
             {
-                if (hard == Hard1.Text)
+                textBlock.Background = wrong;
+                foreach (string label in labels)
                 {
-                    Hard1.Background = right;
-                    rightI++;
+                    if (label == textBlock.Text)
+                    {
+                        textBlock.Background = right;
+                        rightI++;
+                    }
                 }
-                    
-                else if (hard == Hard2.Text)
-                {
-                    Hard2.Background = right;
-                    rightI++;
-                }
-                    
-                else if (hard == Hard3.Text)
-                {
-                    Hard3.Background = right;
-                    rightI++;
-                }
-                    
-                else if (hard == Hard4.Text)
-                {
-                    Hard4.Background = right;
-                    rightI++;
-                }
-                    
             }
+
             if (rightI == 8)
             {
                 Score.OneUp();
