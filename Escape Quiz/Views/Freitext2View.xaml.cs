@@ -32,6 +32,8 @@ namespace Escape_Quiz.Views
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
             this.frame.Navigate(new ZO_Hard_Software(this.frame));
+
+            ButtonNext.Content = "Nächste Frage";
         }
     }
 }

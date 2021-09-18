@@ -25,7 +25,7 @@
         <Label x:Name="bLAN" HorizontalAlignment="Left" Margin="582,175,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="LAN" FontFamily="Arial" FontSize="16" MouseDown="TextBlock_MouseDown"/>
         <Label x:Name="bUSB" HorizontalAlignment="Left" Margin="582,220,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="USB" FontFamily="Arial" FontSize="16" MouseDown="TextBlock_MouseDown"/>
 
-        <Button Content="Nächste Frage" Foreground="#FF45DC0B" Background="Black" BorderBrush="#FF45DC0B" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_NextQuestion" FontFamily="Arial" FontSize="20" />
+        <Button x:Name="NextButton" Content="Antwort überprüfen" Foreground="#FF45DC0B" Background="Black" BorderBrush="#FF45DC0B" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_NextQuestion" FontFamily="Arial" FontSize="20" />
         <ProgressBar HorizontalAlignment="Left" Height="17" Margin="377,-47,0,0" VerticalAlignment="Top" Width="397" Background="#FF050505" BorderBrush="#FF45DC0B" Minimum="0" Maximum="100" Value="44"/>
     </Grid>
 </UserControl>

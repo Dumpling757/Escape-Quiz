@@ -94,7 +94,7 @@ namespace Escape_Quiz.Views
                 textBlock.Background = wrong;
                 foreach(Label label in labels)
                 {
-                    if(label.Content == textBlock.Text)
+                    if((string)label.Content == textBlock.Text)
                     {
                         textBlock.Background = right;
                         rightI++;
@@ -114,6 +114,8 @@ namespace Escape_Quiz.Views
 
             }
             clickI++;
+
+            NextButton.Content = "Nächste Frage!";
         }
     }
 }
