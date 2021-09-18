@@ -22,6 +22,7 @@ namespace Escape_Quiz.Views
     public partial class Wahrheitswerttabelle : UserControl
     {
         private Frame frame;
+        private int rightI;
 
         private int clickI;
         public Wahrheitswerttabelle(Frame frame)
@@ -44,21 +45,30 @@ namespace Escape_Quiz.Views
             if (FirstTB.Text == "0")
             {
                 FirstTB.Background = right;
+                rightI++;
             }
             
 
             if(ThirdTB.Text == "1")
             {
                ThirdTB.Background  = right;
+                rightI++;
             }
 
             if(FourthTB.Text == "1")
             {
                FourthTB.Background = right;
+                rightI++;
             }
             if(FifthTB.Text == "1")
             {
                 FifthTB.Background = right;
+                rightI++;
+            }
+
+            if(rightI == 4)
+            {
+                Score.OneUp();
             }
 
 

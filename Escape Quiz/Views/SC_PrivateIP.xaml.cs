@@ -35,6 +35,7 @@ namespace Escape_Quiz.Views
             if ((bool)privIP.IsChecked)
             {
                 //MessageBox.Show("Richtig!");
+                Score.OneUp();
             }
             privIP.Foreground = Score.Right;
             privIP.IsEnabled = false;

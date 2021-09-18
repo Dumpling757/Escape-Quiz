@@ -33,7 +33,7 @@ namespace Escape_Quiz.Views
             
             if ((bool)Zahl.IsChecked)
             {
-                
+                Score.OneUp();
             }
 
             Zahl.Foreground = Score.Right;

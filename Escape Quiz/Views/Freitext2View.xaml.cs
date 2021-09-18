@@ -31,7 +31,15 @@ namespace Escape_Quiz.Views
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
+            string answerstring = Answer.Text;
             this.frame.Navigate(new ZO_Hard_Software(this.frame));
+
+            if(answerstring == "dynamicnamesystem")
+            {
+                Score.OneUp();
+            }
+
+
 
             ButtonNext.Content = "Nächste Frage";
         }

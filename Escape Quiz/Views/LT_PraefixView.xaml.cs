@@ -41,7 +41,7 @@ namespace Escape_Quiz.Views
 
             if(LT_TB1.Text == "16" && LT_TB2.Text == "255.255.255.255")
             {
-                
+                Score.OneUp();
             }
 
             if(LT_TB1.Text == "16")

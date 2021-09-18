@@ -30,8 +30,15 @@ namespace Escape_Quiz.Views
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-            if (clickI==0 &&(bool)Maus.IsChecked && (bool)Monitor.IsChecked && (bool)Tastatur.IsChecked) { MessageBox.Show("Its right!"); }
-            else if (clickI == 0) { MessageBox.Show("Leider nicht richtig.\nSchau dir die Lösungen an und gehe dann weiter zur nächsten Aufgabe!"); }
+            if (clickI==0 &&(bool)Maus.IsChecked && (bool)Monitor.IsChecked && (bool)Tastatur.IsChecked)
+            {
+                MessageBox.Show("Its right!");
+                Score.OneUp();
+            }
+            else if (clickI == 0)
+            {
+                MessageBox.Show("Leider nicht richtig.\nSchau dir die Lösungen an und gehe dann weiter zur nächsten Aufgabe!"); 
+            }
 
             Maus.Foreground = Score.Right;
             Maus.IsEnabled = false;

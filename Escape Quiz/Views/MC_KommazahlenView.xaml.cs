@@ -46,7 +46,7 @@ namespace Escape_Quiz.Views
             if((bool)cbDouble.IsChecked && (bool)cbFloat.IsChecked)
             {
                 MessageBox.Show("Richtig!");
-
+                Score.OneUp();
                 // TODO IncreaseScore
             }
             else
@@ -73,7 +73,8 @@ namespace Escape_Quiz.Views
             }
             clickI++;
             ButtonNext.Content = "Nächste Frage";
-            Score.OneUp();
+
+            
 
         }
     }

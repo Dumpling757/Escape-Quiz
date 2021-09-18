@@ -17,7 +17,7 @@
        
         <TextBlock x:Name="tbBluetooth" HorizontalAlignment="Left" Margin="41,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White" DragEnter="TextBlock_DragEnter" Drop="TextBlock_Drop" DragLeave="TextBlock_DragLeave"/>
         <TextBlock x:Name="tbWifi"  HorizontalAlignment="Left" Margin="41,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White" DragEnter="TextBlock_DragEnter" Drop="TextBlock_Drop" DragLeave="TextBlock_DragLeave"/>
-        <TextBlock x:Name="tbLAN" HorizontalAlignment="Left" Margin="289,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White" DragEnter="TextBlock_DragEnter" Drop="TextBlock_Droprop" DragLeave="TextBlock_DragLeave"/>
+        <TextBlock x:Name="tbLAN" HorizontalAlignment="Left" Margin="289,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White" DragEnter="TextBlock_DragEnter" Drop="TextBlock_Drop" DragLeave="TextBlock_DragLeave"/>
         <TextBlock x:Name="tbUSB" HorizontalAlignment="Left" Margin="289,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White" DragEnter="TextBlock_DragEnter" Drop="TextBlock_Drop" DragLeave="TextBlock_DragLeave"/>
 
         <Label x:Name="bWLAN" HorizontalAlignment="Left" Margin="582,130,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="WLAN" FontFamily="Arial" FontSize="16" MouseDown="TextBlock_MouseDown"/>
