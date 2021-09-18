@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Text.RegularExpressions;
 
 namespace Escape_Quiz.Views
 {
@@ -21,7 +22,6 @@ namespace Escape_Quiz.Views
     public partial class Freitext1View : UserControl
     {
         private Frame frame;
-
         private int clickI;
         public Freitext1View(Frame frame)
         {
@@ -30,12 +30,19 @@ namespace Escape_Quiz.Views
         }
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-            string answerstring = Answer.Text
+            Answer.Background = Score.Wrong;
 
+            string answerstring = Answer.Text;
+            answerstring.ToLower();
+
+            string regstring = @"\s+";
+            Regex r = new Regex(regstring);
+            r.Replace(answerstring, "");
 
             if (answerstring == "hypertextmarkuplanguage")
             {
                 Score.OneUp();
+                Answer.Background = Score.Right;
             }
 
             if(clickI > 0)
