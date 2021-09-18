@@ -22,41 +22,48 @@ namespace Escape_Quiz.Views
     {
         private Frame frame;
         private int clickI;
+         
         public MC_Peripheriegeraete(Frame frame)
         {
             InitializeComponent();
             this.frame = frame;
+            
         }
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-            if (clickI==0 &&(bool)Maus.IsChecked && (bool)Monitor.IsChecked && (bool)Tastatur.IsChecked)
+            int rightI = 0;
+            if (clickI == 0)
             {
-                MessageBox.Show("Its right!");
-                Score.OneUp();
+
+
+                
+                CheckBox[] checkBoxes = { SuG, Monitor, RAM, Maus, Tastatur, CPU };
+                CheckBox[] rightcheckBoxes = { Monitor, Tastatur, Maus };
+
+
+                foreach (CheckBox checkBox in checkBoxes)
+                {
+                    checkBox.IsEnabled = false;
+                    checkBox.Foreground = Score.Wrong;
+                    foreach (CheckBox check in rightcheckBoxes)
+                    {
+                        if (check == checkBox)
+                        {
+                            rightI++;
+                            checkBox.Foreground = Score.Right;
+                        }
+                            
+                    }
+                }
+
+                MessageBox.Show("Leider nicht richtig.\nSchau dir die Lösungen an und gehe dann weiter zur nächsten Aufgabe!");
+                if (rightI == 3)
+                {
+                    // MessageBox.Show("Its right!");
+                    Score.OneUp();
+                }
             }
-            else if (clickI == 0)
-            {
-                MessageBox.Show("Leider nicht richtig.\nSchau dir die Lösungen an und gehe dann weiter zur nächsten Aufgabe!"); 
-            }
-
-            Maus.Foreground = Score.Right;
-            Maus.IsEnabled = false;
-
-            Monitor.Foreground = Score.Right;
-            Monitor.IsEnabled = false;
-
-            Tastatur.Foreground = Score.Right;
-            Tastatur.IsEnabled = false;
-
-            SuG.Foreground = Score.Right;
-            SuG.IsEnabled = false;
-
-            CPU.Foreground = Score.Right;
-            CPU.IsEnabled = false;
-
-            RAM.Foreground = Score.Right;
-            RAM.IsEnabled = false;
 
             if (clickI > 0) 
             {
