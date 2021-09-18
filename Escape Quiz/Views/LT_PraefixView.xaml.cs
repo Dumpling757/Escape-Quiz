@@ -41,25 +41,25 @@ namespace Escape_Quiz.Views
 
             if(LT_TB1.Text == "16" && LT_TB2.Text == "255.255.255.255")
             {
-
+                
             }
 
             if(LT_TB1.Text == "16")
             {
-                LT_TB1.Foreground = new SolidColorBrush(Colors.Green);
+                LT_TB1.Foreground = Score.Right;
             }
             else
             {
-                LT_TB1.Foreground = new SolidColorBrush(Colors.Red);
+                LT_TB1.Foreground = Score.Wrong;
             }
 
             if(LT_TB2.Text == "255.255.255.255")
             {
-                LT_TB2.Foreground = new SolidColorBrush(Colors.Green);
+                LT_TB2.Foreground = Score.Right;
             }
             else
             {
-                LT_TB2.Foreground = new SolidColorBrush(Colors.Red);
+                LT_TB2.Foreground = Score.Wrong;
             }
 
             if (clickI > 0)

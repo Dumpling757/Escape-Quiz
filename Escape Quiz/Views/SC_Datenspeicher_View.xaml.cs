@@ -36,16 +36,16 @@ namespace Escape_Quiz.Views
                 
             }
 
-            Zahl.Foreground = new SolidColorBrush(Colors.Green);
+            Zahl.Foreground = Score.Right;
             Zahl.IsEnabled = false;
 
-            Bild.Foreground = new SolidColorBrush(Colors.Red);
+            Bild.Foreground = Score.Wrong;
             Bild.IsEnabled = false;
-            Geräusch.Foreground = new SolidColorBrush(Colors.Red);
+            Geräusch.Foreground = Score.Wrong;
             Geräusch.IsEnabled = false;
-            Wort.Foreground = new SolidColorBrush(Colors.Red);
+            Wort.Foreground =  Score.Wrong;
             Wort.IsEnabled = false;
-            Software.Foreground = new SolidColorBrush(Colors.Red);
+            Software.Foreground = Score.Wrong;
             Software.IsEnabled = false;
 
             

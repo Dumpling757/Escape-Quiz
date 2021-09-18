@@ -33,24 +33,22 @@ namespace Escape_Quiz.Views
             if (clickI==0 &&(bool)Maus.IsChecked && (bool)Monitor.IsChecked && (bool)Tastatur.IsChecked) { MessageBox.Show("Its right!"); }
             else if (clickI == 0) { MessageBox.Show("Leider nicht richtig.\nSchau dir die Lösungen an und gehe dann weiter zur nächsten Aufgabe!"); }
 
-            Brush right = new SolidColorBrush(Colors.Green);
-            Brush wrong = new SolidColorBrush(Colors.Red);
-            Maus.Foreground = right;
+            Maus.Foreground = Score.Right;
             Maus.IsEnabled = false;
 
-            Monitor.Foreground = right;
+            Monitor.Foreground = Score.Right;
             Monitor.IsEnabled = false;
 
-            Tastatur.Foreground = right;
+            Tastatur.Foreground = Score.Right;
             Tastatur.IsEnabled = false;
 
-            SuG.Foreground = wrong;
+            SuG.Foreground = Score.Right;
             SuG.IsEnabled = false;
 
-            CPU.Foreground = wrong;
+            CPU.Foreground = Score.Right;
             CPU.IsEnabled = false;
 
-            RAM.Foreground = wrong;
+            RAM.Foreground = Score.Right;
             RAM.IsEnabled = false;
 
             if (clickI > 0) 

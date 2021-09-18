@@ -36,13 +36,13 @@ namespace Escape_Quiz.Views
             {
                 //MessageBox.Show("Richtig!");
             }
-            privIP.Foreground = new SolidColorBrush(Colors.Green);
+            privIP.Foreground = Score.Right;
             privIP.IsEnabled = false;
-            localhost.Foreground = new SolidColorBrush(Colors.Red);
+            localhost.Foreground = Score.Wrong;
             localhost.IsEnabled = false;
-            pubIP.Foreground = new SolidColorBrush(Colors.Red);
+            pubIP.Foreground = Score.Wrong;
             pubIP.IsEnabled = false;
-            APIPA.Foreground = new SolidColorBrush(Colors.Red);
+            APIPA.Foreground = Score.Wrong;
             APIPA.IsEnabled = false;
 
             if (clickI > 0)

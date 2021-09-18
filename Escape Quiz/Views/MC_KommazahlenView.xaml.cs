@@ -53,16 +53,15 @@ namespace Escape_Quiz.Views
             {
                 MessageBox.Show("Falsch!");
             }
-            Brush right = new SolidColorBrush(Colors.Green);
-            Brush wrong = new SolidColorBrush(Colors.Red);
-            cbDouble.Foreground = right;
+            
+            cbDouble.Foreground = Score.Right;
             cbDouble.IsEnabled = false;
-            cbFloat.Foreground = right;
+            cbFloat.Foreground = Score.Right;
             cbDouble.IsEnabled = false;
 
-            cbInteger.Foreground = wrong;
+            cbInteger.Foreground = Score.Wrong;
             cbInteger.IsEnabled = false;
-            cbBoolean.Foreground = wrong;
+            cbBoolean.Foreground = Score.Wrong;
             cbBoolean.IsEnabled = false;
 
 
