@@ -39,7 +39,7 @@ namespace Escape_Quiz.Views
             Regex r = new Regex(regstring);
             r.Replace(answerstring, "");
 
-            if (answerstring == "hypertextmarkuplanguage" || answerstring == "Hypertext Markup Language")
+            if (answerstring == "hypertextmarkuplanguage" || Answer.Text == "Hypertext Markup Language")
             {
                 Score.OneUp();
                 Answer.Background = Score.Right;
@@ -50,6 +50,7 @@ namespace Escape_Quiz.Views
                 this.frame.Navigate(new SymbolView(this.frame));
             }
             clickI++;
+            ButtonNext.Content = "Nächste Frage";
         }
     }
 }
