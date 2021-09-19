@@ -33,13 +33,13 @@ namespace Escape_Quiz.Views
             Answer.Background = Score.Wrong;
 
             string answerstring = Answer.Text;
-            answerstring.ToLower();
+            answerstring = answerstring.ToLower();
 
-            string regstring = @"\s+";
+            string regstring = "s+";
             Regex r = new Regex(regstring);
             r.Replace(answerstring, "");
 
-            if (answerstring == "hypertextmarkuplanguage")
+            if (answerstring == "hypertextmarkuplanguage" || answerstring == "Hypertext Markup Language")
             {
                 Score.OneUp();
                 Answer.Background = Score.Right;
