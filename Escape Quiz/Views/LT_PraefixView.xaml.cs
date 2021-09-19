@@ -64,7 +64,11 @@ namespace Escape_Quiz.Views
 
             if (clickI > 0)
             {
-                this.frame.Navigate(new MC_KommazahlenView(this.frame));
+                if (Score.GetScore() < 7)
+                    this.frame.Navigate(new MC_KommazahlenView(this.frame));
+                else
+                    this.frame.Navigate(new EndView(this.frame));
+               
             }
             clickI++;
             ButtonNext.Content = "Náchste Frage"; 

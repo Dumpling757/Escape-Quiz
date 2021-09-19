@@ -79,7 +79,9 @@ namespace Escape_Quiz.Views
             
 
             if(clickI > 0)
-           // Application.Current.MainWindow.Close();
+                // Application.Current.MainWindow.Close();
+                
+                    this.frame.Navigate(new EndView(this.frame));
 
             clickI++;
         }

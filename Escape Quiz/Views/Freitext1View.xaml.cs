@@ -47,7 +47,10 @@ namespace Escape_Quiz.Views
 
             if(clickI > 0)
             {
-                this.frame.Navigate(new SymbolView(this.frame));
+                if (Score.GetScore() < 7)
+                    this.frame.Navigate(new SymbolView(this.frame));
+                else
+                    this.frame.Navigate(new EndView(this.frame));
             }
             clickI++;
             ButtonNext.Content = "Nächste Frage";

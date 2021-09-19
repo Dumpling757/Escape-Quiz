@@ -74,7 +74,11 @@ namespace Escape_Quiz.Views
 
             if (clickI > 0)
             {
-                this.FrameQuestion.Navigate(new SC_Datenspeicher_View(this.FrameQuestion));
+                if (Score.GetScore() < 7)
+                    this.FrameQuestion.Navigate(new SC_Datenspeicher_View(this.FrameQuestion));
+                else
+                    this.FrameQuestion.Navigate(new EndView(this.frame));
+                
 
             }
             clickI++;
