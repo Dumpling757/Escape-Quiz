@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="Start.png" />
+    <None Remove="Start_Bild.png" />
     <None Remove="Views\Bluetooth.png" />
     <None Remove="Views\LAN.png" />
     <None Remove="Views\Start.png" />
@@ -33,6 +34,7 @@
 
   <ItemGroup>
     <Resource Include="Start.png" />
+    <Resource Include="Start_Bild.png" />
     <Resource Include="Views\Bluetooth.png" />
     <Resource Include="Views\LAN.png" />
     <Resource Include="Views\Start.png" />

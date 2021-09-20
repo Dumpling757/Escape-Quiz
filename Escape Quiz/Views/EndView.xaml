@@ -29,7 +29,7 @@
         <Label x:Name="L18" Content="A" HorizontalAlignment="Left" Margin="460,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
         <Label x:Name="L19" Content="A" HorizontalAlignment="Left" Margin="480,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
         
-        <TextBlock Text="Du hast das Quiz geschafft! Hier ist der Code" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="43,39,0,0" Foreground="White" FontSize="20" Visibility="Visible"/>
+        <TextBlock Text="Ihr habt das Quiz geschafft! Hier ist der Code" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="43,39,0,0" Foreground="White" FontSize="20" Visibility="Visible"/>
         <Button x:Name="ButtonNext" Content="Quiz beenden" Foreground="#FF45DC0B" Background="Black" BorderBrush="#FF45DC0B" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="ButtonNext_Click"  FontFamily="Arial" FontSize="20" />
         <ProgressBar HorizontalAlignment="Left" Height="17" Margin="377,-47,0,0" VerticalAlignment="Top" Width="397" Background="#FF050505" BorderBrush="#FF45DC0B" Minimum="0" Maximum="100" Value="100"/>
         <Grid/>

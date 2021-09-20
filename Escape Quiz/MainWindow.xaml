@@ -11,15 +11,11 @@
             <Grid Background="Black">
                 <Button Content="Quiz Starten" HorizontalAlignment="Left" Margin="515,400,0,0" VerticalAlignment="Top" Width="197" FontFamily="Arial" FontSize="24" Height="67" Foreground="#FF45DC0B" Background="Black" BorderBrush="#FF45DC0B" FontWeight="Bold" Click="Button_QuizStart"/>
                 <Label Content="IT Quiz " Name="Label"  HorizontalAlignment="Left" Margin="27,10,0,0" VerticalAlignment="Top" Height="69" Width="547" FontFamily="Arial" FontSize="36" Foreground="#FF45DC0B" FontWeight="Bold" Background="{x:Null}"/>
-                <Button Name="Help" Content="?" HorizontalAlignment="Left" Margin="654,29,0,0" VerticalAlignment="Top" Width="83" Height="67" Foreground="#FF45DC0B" FontFamily="Arial" FontSize="48" BorderBrush="#FF45DC0B" Click="Button_GetHelp">
-                    <Button.Background>
-                        <ImageBrush/>
-                    </Button.Background>
-                </Button>
                 <Label Content="Stell dein Wissen unter Beweis.&#xA;Kannst du den richtigen Code finden?" HorizontalAlignment="Left" Margin="27,58,0,0" VerticalAlignment="Top" Height="79" Width="520" Foreground="#FF45DC0B" FontFamily="Arial" FontSize="18" Background="{x:Null}"/>
                 <Image HorizontalAlignment="Left" Height="347" Margin="27,118,0,0" VerticalAlignment="Top" Width="483" Source="/Start.png" Stretch="Fill"/>
+                <Image HorizontalAlignment="Left" Height="246" Margin="547,118,0,0" VerticalAlignment="Top" Width="165" Source="/Start_Bild.png" Stretch="Fill"/>
             </Grid>
         </Frame.Content>
     </Frame>
 
-    </Window>
+</Window>
