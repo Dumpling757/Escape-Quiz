@@ -46,30 +46,31 @@ namespace Escape_Quiz.Views
             FifthTB.Background = wrong;
             FifthTB.IsEnabled = false;
 
-            if (FirstTB.Text == "0")
-            {
-                FirstTB.Background = right;
-                rightI++;
+                if (FirstTB.Text == "0")
+                {
+                    FirstTB.Background = right;
+                    rightI++;
+                }
+
+
+                if (ThirdTB.Text == "1")
+                {
+                    ThirdTB.Background = right;
+                    rightI++;
+                }
+
+                if (FourthTB.Text == "1")
+                {
+                    FourthTB.Background = right;
+                    rightI++;
+                }
+                if (FifthTB.Text == "1")
+                {
+                    FifthTB.Background = right;
+                    rightI++;
+                }
             }
             
-
-            if(ThirdTB.Text == "1")
-            {
-               ThirdTB.Background  = right;
-                rightI++;
-            }
-
-            if(FourthTB.Text == "1")
-            {
-               FourthTB.Background = right;
-                rightI++;
-            }
-            if(FifthTB.Text == "1")
-            {
-                FifthTB.Background = right;
-                rightI++;
-            }
-
 
             if (clickI > 0)
             {
@@ -77,6 +78,7 @@ namespace Escape_Quiz.Views
                 {
                     Score.OneUp();
                 }
+
 
                 if (Score.GetScore() < 7)
                     this.FrameQuestion.Navigate(new SC_Datenspeicher_View(this.FrameQuestion));

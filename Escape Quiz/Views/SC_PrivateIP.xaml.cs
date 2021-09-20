@@ -52,7 +52,7 @@ namespace Escape_Quiz.Views
                 if((bool)privIP.IsChecked)
                     Score.OneUp();
 
-
+                
 
                 if (Score.GetScore() < 7)
                     this.frame.Navigate(new LT_PraefixView(this.frame));
