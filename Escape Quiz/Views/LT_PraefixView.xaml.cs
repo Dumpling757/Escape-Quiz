@@ -59,6 +59,9 @@ namespace Escape_Quiz.Views
                 LT_TB2.Background = Score.Wrong;
             }
 
+            LT_TB1.Foreground = new SolidColorBrush(Colors.White);
+            LT_TB2.Foreground = new SolidColorBrush(Colors.White);
+
             if (clickI > 0)
             {
                 if (LT_TB1.Text == "16" && LT_TB2.Text == "255.255.255.0")

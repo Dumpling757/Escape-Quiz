@@ -100,6 +100,7 @@ namespace Escape_Quiz.Views
                         label.IsEnabled = false;
                         textBlock.IsEnabled = false;
                     }
+                    else textBlock.Foreground = new SolidColorBrush(Colors.White);
                 }
             }         
 
