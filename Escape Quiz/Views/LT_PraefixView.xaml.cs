@@ -49,20 +49,20 @@ namespace Escape_Quiz.Views
 
             if(LT_TB1.Text == "16")
             {
-                LT_TB1.Foreground = Score.Right;
+                LT_TB1.Background = Score.Right;
             }
             else
             {
-                LT_TB1.Foreground = Score.Wrong;
+                LT_TB1.Background = Score.Wrong;
             }
 
             if(LT_TB2.Text == "255.255.255.0")
             {
-                LT_TB2.Foreground = Score.Right;
+                LT_TB2.Background = Score.Right;
             }
             else
             {
-                LT_TB2.Foreground = Score.Wrong;
+                LT_TB2.Background = Score.Wrong;
             }
 
             if (clickI > 0)
