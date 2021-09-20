@@ -37,10 +37,16 @@ namespace Escape_Quiz.Views
         {
             Label[] labels = { lbBIOS, lbWord, lbOS, lbDrucker, lbHDD, lbMaus, lbMainboard, lbRAM };
 
+            string[] software = { (string)lbBIOS.Content, (string)lbWord.Content, (string)lbOS.Content, (string)lbDrucker.Content };
+            string[] hardware = { (string)lbHDD.Content, (string)lbMaus.Content, (string)lbMainboard.Content, (string)lbRAM.Content };
 
 
             TextBlock[] textBlocks = { Soft1, Soft2, Soft3, Soft4, Hard1, Hard2, Hard3, Hard4 };
-            
+
+            foreach(TextBlock textBlock in textBlocks)
+            {
+                textBlock.Background = Score.Wrong;
+            }
 
             int rightI = 0;
 
@@ -51,6 +57,10 @@ namespace Escape_Quiz.Views
              * Im ersten Methodenrumpf wird jede Feld UI erstmal auf "Falsch" gesetzt, in der inneren ForEach Schleife wird dies wieder korrigiert.
              */
 
+
+            // Quarantined for being fuk
+
+            /*
             foreach (TextBlock textBlock in textBlocks)
             {
                 textBlock.Background = wrong;
@@ -65,61 +75,119 @@ namespace Escape_Quiz.Views
                     }
                 }
             }
-
-            if(clickI > 0) 
+            */
+            foreach (string soft in software)
             {
-                if (rightI == 8)
+                if (soft == Soft1.Text)
                 {
-                    Score.OneUp();
+                    Soft1.Background = right;
+                    rightI++;
                 }
 
-                MessageBox.Show("Herzlichen Glückwunsch!\n\n"
-                + "ihr habt das Quiz erfolgreich bestanden.\n\n"
-                + "\t  " + Score.GetScore() + " /10 richtig.\n\n"
-                + "Geht nun weiter und denkt an das Lösungswort."); //Hier Ausgabe der richtigen Anzahl an Fragen
+                else if (soft == Soft2.Text)
+                {
+                    Soft2.Background = right;
+                    rightI++;
+                }
 
-                this.frame.Navigate(new EndView(this.frame));
+                else if (soft == Soft3.Text)
+                {
+                    Soft3.Background = right;
+                    rightI++;
+                }
+
+                else if (soft == Soft4.Text)
+                {
+                    Soft4.Background = right;
+                    rightI++;
+
+                }
+
             }
-            ButtonNext.Content = "Quiz beenden";
-            clickI++;
-        }
+                foreach (string hard in hardware)
+                {
+                    if (hard == Hard1.Text)
+                    {
+                        Hard1.Background = right;
+                        rightI++;
+                    }
+
+                    else if (hard == Hard2.Text)
+                    {
+                        Hard2.Background = right;
+                        rightI++;
+                    }
+
+                    else if (hard == Hard3.Text)
+                    {
+                        Hard3.Background = right;
+                        rightI++;
+                    }
+
+                    else if (hard == Hard4.Text)
+                    {
+                        Hard4.Background = right;
+                        rightI++;
+                    }
+
+                }
+                if (clickI > 0)
+                {
+                    if (rightI == 8)
+                    {
+                        Score.OneUp();
+                    }
+
+                    MessageBox.Show("Herzlichen Glückwunsch!\n\n"
+                    + "ihr habt das Quiz erfolgreich bestanden.\n\n"
+                    + "\t  " + Score.GetScore() + " /10 richtig.\n\n"
+                    + "Geht nun weiter und denkt an das Lösungswort."); //Hier Ausgabe der richtigen Anzahl an Fragen
+
+                    this.frame.Navigate(new EndView(this.frame));
+                }
+                ButtonNext.Content = "Quiz beenden";
+                clickI++;
+            }
+
+        
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
-        {
-            Soft1.AllowDrop = Soft2.AllowDrop = 
-                Soft3.AllowDrop =Soft4.AllowDrop = 
-                Hard1.AllowDrop = Hard2.AllowDrop =
-                Hard3.AllowDrop = Hard4.AllowDrop = true;
-
-        }
-
-        private void Label_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            Label labelstring = (Label)sender;
-            DragDrop.DoDragDrop(labelstring, labelstring.Content, DragDropEffects.Move);
-
-        }
-
-        private void Label_DragEnter(object sender, DragEventArgs e)
-        {
-            if (e.Data.GetDataPresent(DataFormats.Text))
             {
-                e.Effects = DragDropEffects.Move;
+                Soft1.AllowDrop = Soft2.AllowDrop =
+                    Soft3.AllowDrop = Soft4.AllowDrop =
+                    Hard1.AllowDrop = Hard2.AllowDrop =
+                    Hard3.AllowDrop = Hard4.AllowDrop = true;
+
             }
-            else
+
+            private void Label_MouseDown(object sender, MouseButtonEventArgs e)
             {
-                // e.Effects = DragDropEffects.None;
+                Label labelstring = (Label)sender;
+                DragDrop.DoDragDrop(labelstring, labelstring.Content, DragDropEffects.Move);
+
             }
-        }
 
-        private void Label_Drop(object sender, DragEventArgs e)
-        {
-            TextBlock textBlock = (TextBlock)sender;
-            textBlock.Text = (string)e.Data.GetData(DataFormats.StringFormat, true);
-        }
+            private void Label_DragEnter(object sender, DragEventArgs e)
+            {
+                if (e.Data.GetDataPresent(DataFormats.Text))
+                {
+                    e.Effects = DragDropEffects.Move;
+                }
+                else
+                {
+                    // e.Effects = DragDropEffects.None;
+                }
+            }
 
-        private void Label_DragLeave(object sender, DragEventArgs e)
-        {
+            private void Label_Drop(object sender, DragEventArgs e)
+            {
+                TextBlock textBlock = (TextBlock)sender;
+                textBlock.Text = (string)e.Data.GetData(DataFormats.StringFormat, true);
+            }
 
+            private void Label_DragLeave(object sender, DragEventArgs e)
+            {
+
+            }
         }
     }
-}
+
