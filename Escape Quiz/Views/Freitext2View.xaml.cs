@@ -21,6 +21,7 @@ namespace Escape_Quiz.Views
     public partial class Freitext2View : UserControl
     {
         private Frame frame;
+        private int clickI;
         public Freitext2View(Frame frame)
         {
             InitializeComponent();
@@ -31,21 +32,26 @@ namespace Escape_Quiz.Views
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
+            Answer.Background = Score.Wrong;
             string answerstring = Answer.Text;
-            
-            if (Score.GetScore() < 7)
-                this.frame.Navigate(new ZO_Hard_Software(this.frame));
-            else
-                this.frame.Navigate(new EndView(this.frame));
-
-            if (answerstring == "dynamicnamesystem")
+            if (clickI > 0)
             {
-                Score.OneUp();
+
+                if (Score.GetScore() < 7)
+                    this.frame.Navigate(new ZO_Hard_Software(this.frame));
+                else
+                    this.frame.Navigate(new EndView(this.frame));
+
+
+                if (answerstring == "domainnamesystem" || Answer.Text == "Domain Name System")
+                {
+                    Score.OneUp();
+                    Answer.Background = Score.Right;
+                }
             }
 
-
-
             ButtonNext.Content = "Nächste Frage";
+            clickI++;
         }
     }
 }
