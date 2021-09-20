@@ -32,9 +32,6 @@ namespace Escape_Quiz.Views
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-            // Whitespace removal
-            string regstring = @"\s+";
-            Regex r = new Regex(regstring);
 
             LT_TB1.IsEnabled = false;
             LT_TB2.IsEnabled = false;

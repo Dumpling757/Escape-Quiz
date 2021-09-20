@@ -44,9 +44,9 @@ namespace Escape_Quiz.Views
             */
                 
             
-            cbDouble.Foreground = Score.Right;
+            cbDouble.Foreground = Score.Wrong;
             cbDouble.IsEnabled = false;
-            cbFloat.Foreground = Score.Right;
+            cbFloat.Foreground = Score.Wrong;
             cbDouble.IsEnabled = false;
 
             cbInteger.Foreground = Score.Wrong;
@@ -60,6 +60,8 @@ namespace Escape_Quiz.Views
             {
                 if ((bool)cbDouble.IsChecked && (bool)cbFloat.IsChecked)
                 {
+                    cbDouble.Foreground = Score.Right;
+                    cbInteger.Foreground = Score.Right;
                     Score.OneUp();
                 }
 
