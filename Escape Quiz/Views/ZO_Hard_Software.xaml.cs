@@ -82,8 +82,8 @@ namespace Escape_Quiz.Views
                 if (rightI == 8)
                 {
                     Score.OneUp();
-                    
                 }
+                MessageBox.Show(Convert.ToString(Score.GetScore()));
                 this.frame.Navigate(new EndView(this.frame));
             }
                 // Application.Current.MainWindow.Close();

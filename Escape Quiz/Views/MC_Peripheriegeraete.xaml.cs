@@ -22,6 +22,7 @@ namespace Escape_Quiz.Views
     {
         private Frame frame;
         private int clickI;
+        private int rightI;
          
         public MC_Peripheriegeraete(Frame frame)
         {
@@ -32,7 +33,7 @@ namespace Escape_Quiz.Views
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-            int rightI = 0;
+            
             if (clickI == 0)
             {
                 
@@ -57,14 +58,14 @@ namespace Escape_Quiz.Views
 
                 if (rightI == 3)
                 {
-                    // MessageBox.Show("Its right!");
                     Score.OneUp();
                 }
+
             }
 
             if (clickI > 0) 
             {
-                
+
                 if (Score.GetScore() < 7)
                     this.frame.Navigate(new SymbolView(this.frame));
                 else
