@@ -69,7 +69,7 @@ namespace Escape_Quiz.Views
                     FifthTB.Background = right;
                     rightI++;
                 }
-            }
+            
             
 
             if (clickI > 0)
