@@ -30,6 +30,7 @@ namespace Escape_Quiz.Views
         }
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
+
             Answer.Background = Score.Wrong;
 
             string answerstring = Answer.Text;
@@ -41,13 +42,14 @@ namespace Escape_Quiz.Views
 
             if (answerstring == "hypertextmarkuplanguage" || Answer.Text == "Hypertext Markup Language" || answerstring.ToLower() == "hypertext markup language")
             {
-                
                 Answer.Background = Score.Right;
             }
 
             if(clickI > 0)
             {
+                if(Answer.Background == Score.Right)
                 Score.OneUp();
+                
                 if (Score.GetScore() < 7)
                     this.frame.Navigate(new SymbolView(this.frame));
                 else
