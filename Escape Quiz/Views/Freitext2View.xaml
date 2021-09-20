@@ -8,7 +8,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="43,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="71" Width="680" Foreground="White" FontFamily="Arial" FontSize="20"><Run Text="Wofür steht die Abkürzung "/><Run Text="DNS"/><Run Text="?"/><Run Text=" "/><LineBreak/><Run Text="Schreibt die Lösung in die unten stehende Box. "/><LineBreak/><Run/></TextBlock>
-        <TextBox x:Name="Answer" HorizontalAlignment="Left" Height="47" Margin="43,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="680"/>
+        <TextBox x:Name="Answer" HorizontalAlignment="Left" Height="47" Margin="43,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="680" SpellCheck.IsEnabled="True" SpellCheck.SpellingReform="Postreform"/>
         <Button x:Name="ButtonNext" Content="Nächste Frage" Foreground="#FF45DC0B" Background="Black" BorderBrush="#FF45DC0B" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="Button_NextQuestion" FontFamily="Arial" FontSize="20" />
 
         <ProgressBar HorizontalAlignment="Left" Height="17" Margin="377,-47,0,0" VerticalAlignment="Top" Width="397" Background="#FF050505" BorderBrush="#FF45DC0B" Minimum="0" Maximum="100" Value="88"/>
