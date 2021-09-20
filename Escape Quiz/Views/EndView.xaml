@@ -8,16 +8,26 @@
              d:DesignHeight="450" d:DesignWidth="800"
              Background="Black">
     <Grid>
-        <Label x:Name="L0" Content="A" HorizontalAlignment="Left" Margin="100,200,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
-        <Label x:Name="L1" Content="B" HorizontalAlignment="Left" Margin="120,200,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
-        <Label x:Name="L2" Content="a" HorizontalAlignment="Left" Margin="140,200,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
-        <Label x:Name="L3" Content="A" HorizontalAlignment="Left" Margin="160,200,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
-        <Label x:Name="L4" Content="A" HorizontalAlignment="Left" Margin="180,200,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
-        <Label x:Name="L5" Content="A" HorizontalAlignment="Left" Margin="200,200,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
-        <Label x:Name="L6" Content="A" HorizontalAlignment="Left" Margin="220,200,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
-        <Label x:Name="L7" Content="A" HorizontalAlignment="Left" Margin="240,200,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
-        <Label x:Name="L8" Content="A" HorizontalAlignment="Left" Margin="260,200,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
-        <Label x:Name="L9" Content="A" HorizontalAlignment="Left" Margin="280,200,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L0" Content="A" HorizontalAlignment="Left" Margin="100,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L1" Content="B" HorizontalAlignment="Left" Margin="120,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L2" Content="a" HorizontalAlignment="Left" Margin="140,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L3" Content="A" HorizontalAlignment="Left" Margin="160,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L4" Content="A" HorizontalAlignment="Left" Margin="180,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L5" Content="A" HorizontalAlignment="Left" Margin="200,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L6" Content="A" HorizontalAlignment="Left" Margin="220,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L7" Content="A" HorizontalAlignment="Left" Margin="240,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L8" Content="A" HorizontalAlignment="Left" Margin="260,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L9" Content="A" HorizontalAlignment="Left" Margin="280,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L10" Content="A" HorizontalAlignment="Left" Margin="300,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L11" Content="B" HorizontalAlignment="Left" Margin="320,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L12" Content="a" HorizontalAlignment="Left" Margin="340,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L13" Content="A" HorizontalAlignment="Left" Margin="360,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L14" Content="A" HorizontalAlignment="Left" Margin="380,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L15" Content="A" HorizontalAlignment="Left" Margin="400,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L16" Content="A" HorizontalAlignment="Left" Margin="420,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L17" Content="A" HorizontalAlignment="Left" Margin="440,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L18" Content="A" HorizontalAlignment="Left" Margin="460,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
+        <Label x:Name="L19" Content="A" HorizontalAlignment="Left" Margin="480,100,0,200" Foreground="White" FontSize="20" FontFamily="Courier New"/>
         
         <TextBlock Text="Du hast das Quiz geschafft! Hier ist der Code" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="43,39,0,0" Foreground="White" FontSize="20" Visibility="Visible"/>
         <Button x:Name="ButtonNext" Content="Quiz beenden" Foreground="#FF45DC0B" Background="Black" BorderBrush="#FF45DC0B" HorizontalAlignment="Left" Margin="515,310,0,0" Width="197" Height="67" VerticalAlignment="Top" Click="ButtonNext_Click"  FontFamily="Arial" FontSize="20" />

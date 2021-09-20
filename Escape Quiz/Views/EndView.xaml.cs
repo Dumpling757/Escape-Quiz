@@ -25,24 +25,18 @@ namespace Escape_Quiz.Views
         {
             this.frame = frame;
             InitializeComponent();
-            Random rnd = new Random();
-            // 'ア', 'ン'
-            char randomChar = (char)rnd.Next('c', 'z');
-            for (int i = 0; i == 5; i++)
-            {
-                L1.Content = randomChar;
-            }
+            CodeGeneration();
             //'a' and 'z' are interpreted as ints for parameters for Next()
         }
 
         public void CodeGeneration()
         {
-            Random rnd = new Random();
-            // 'ア', 'ン'
-            char randomChar = (char)rnd.Next('c', 'z');
-            for(int i = 0; i == 5; i++)
+            string[] code = {"O","T", "S", "B", "M", "F", "P", "U", "Z", "A", "Q", "V", "Y", "R", "G", "I", "X", "K", "W", "C" };
+            Label[] lable = { L0, L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L15, L16, L17, L18, L19 }; 
+            
+            for (int i = 0; i <code.Length; i++)
             {
-                L1.Content = randomChar;
+                lable[i].Content = code[i];
             }
             //'a' and 'z' are interpreted as ints for parameters for Next()
         }
