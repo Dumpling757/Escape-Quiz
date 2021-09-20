@@ -32,12 +32,7 @@ namespace Escape_Quiz.Views
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-            if ((bool)privIP.IsChecked)
-            {
-                //MessageBox.Show("Richtig!");
-                Score.OneUp();
-            }
-            privIP.Foreground = Score.Right;
+            privIP.Foreground = Score.Wrong;
             privIP.IsEnabled = false;
             localhost.Foreground = Score.Wrong;
             localhost.IsEnabled = false;
@@ -48,6 +43,15 @@ namespace Escape_Quiz.Views
 
             if (clickI > 0)
             {
+
+                if ((bool)privIP.IsChecked)
+                {
+                    //MessageBox.Show("Richtig!");
+                    Score.OneUp();
+                    MessageBox.Show(Convert.ToString(Score.GetScore()));
+                    privIP.Foreground = Score.Right;
+
+                }
                 if (Score.GetScore() < 7)
                     this.frame.Navigate(new LT_PraefixView(this.frame));
                 else
