@@ -34,6 +34,13 @@ namespace Escape_Quiz.Views
         {
             Answer.Background = Score.Wrong;
             string answerstring = Answer.Text;
+
+            if (answerstring == "domainnamesystem" || Answer.Text == "Domain Name System")
+            {
+               
+                Answer.Background = Score.Right;
+            }
+
             if (clickI > 0)
             {
 
@@ -43,10 +50,10 @@ namespace Escape_Quiz.Views
                     this.frame.Navigate(new EndView(this.frame));
 
 
-                if (answerstring == "domainnamesystem" || Answer.Text == "Domain Name System")
+                if (Answer.Background == Score.Right)
                 {
                     Score.OneUp();
-                    Answer.Background = Score.Right;
+                    
                 }
             }
 
