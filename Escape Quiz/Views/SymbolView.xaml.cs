@@ -98,6 +98,7 @@ namespace Escape_Quiz.Views
                     if((string)label.Content == textBlock.Text)
                     {
                         textBlock.Background = right;
+                        textBlock.Foreground = new SolidColorBrush(Colors.White);
                         rightI++;
                         label.IsEnabled = false;
                         textBlock.IsEnabled = false;
