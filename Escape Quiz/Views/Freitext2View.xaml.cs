@@ -33,6 +33,7 @@ namespace Escape_Quiz.Views
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
             Answer.Background = Score.Wrong;
+            Answer.IsEnabled = false;
             string answerstring = Answer.Text;
 
             if (answerstring == "domainnamesystem" || Answer.Text == "Domain Name System" || answerstring.ToLower() == "domain name system")

@@ -38,9 +38,13 @@ namespace Escape_Quiz.Views
             Brush wrong = new SolidColorBrush(Colors.Red);
 
             FirstTB.Background = wrong;
+            FirstTB.IsEnabled = false;
             ThirdTB.Background = wrong;
+            ThirdTB.IsEnabled = false;
             FourthTB.Background = wrong;
+            FourthTB.IsEnabled = false;
             FifthTB.Background = wrong;
+            FifthTB.IsEnabled = false;
 
             if (FirstTB.Text == "0")
             {
