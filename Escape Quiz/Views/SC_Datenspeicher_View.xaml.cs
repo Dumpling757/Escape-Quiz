@@ -31,10 +31,7 @@ namespace Escape_Quiz.Views
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
             
-            if ((bool)Zahl.IsChecked)
-            {
-                Score.OneUp();
-            }
+            
 
             Zahl.Foreground = Score.Right;
             Zahl.IsEnabled = false;
@@ -51,6 +48,10 @@ namespace Escape_Quiz.Views
             
             if(clickI > 0)
             {
+                if ((bool)Zahl.IsChecked)
+                {
+                    Score.OneUp();
+                }
                 if (Score.GetScore() < 7)
                     this.frame.Navigate(new Freitext1View(this.frame));
                 else

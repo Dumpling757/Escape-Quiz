@@ -10,10 +10,10 @@
     <Grid>
         <Label Content="In der IT ist es wichtig den Unterschied zwischen Hard- und Software zu kennen. &#xD;&#xA;Versucht einmal die rechten Begriffe jeweils der Soft- und der Hardware zuzuordnen!" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="70" Grid.ColumnSpan="4" Width="780" FontSize="20" FontFamily="Arial" Foreground="White"/>
 
-        <Label x:Name="lbRAM" HorizontalAlignment="Left" Margin="629,142,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Arbeits-&#xD;&#xA;speicher" FontFamily="Arial" FontSize="16" MouseDown="Label_MouseDown"/>
-        <Label x:Name="lbBIOS" HorizontalAlignment="Left" Margin="629,97,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="BIOS" FontFamily="Arial" FontSize="16" MouseDown="Label_MouseDown"/>
-        <Label x:Name="lbMaus" HorizontalAlignment="Left" Margin="629,187,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Maus" FontFamily="Arial" FontSize="16" MouseDown="Label_MouseDown"/>
-        <Label x:Name="lbWord" HorizontalAlignment="Left" Margin="629,232,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Word" FontFamily="Arial" FontSize="16" MouseDown="Label_MouseDown"/>
+        <Label x:Name="lbRAM" HorizontalAlignment="Left" Margin="629,142,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Arbeits-&#xD;&#xA;speicher" FontFamily="Arial" FontSize="14" MouseDown="Label_MouseDown"/>
+        <Label x:Name="lbBIOS" HorizontalAlignment="Left" Margin="629,97,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="BIOS" FontFamily="Arial" FontSize="14" MouseDown="Label_MouseDown"/>
+        <Label x:Name="lbMaus" HorizontalAlignment="Left" Margin="629,187,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Maus" FontFamily="Arial" FontSize="14" MouseDown="Label_MouseDown"/>
+        <Label x:Name="lbWord" HorizontalAlignment="Left" Margin="629,232,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Word" FontFamily="Arial" FontSize="14" MouseDown="Label_MouseDown"/>
 
         <TextBlock x:Name="Soft1" HorizontalAlignment="Left" Margin="41,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White" DragEnter="Label_DragEnter" Drop="Label_Drop" DragLeave="Label_DragLeave"/>
         <TextBlock x:Name="Soft2" HorizontalAlignment="Left" Margin="41,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White" DragEnter="Label_DragEnter"  Drop="Label_Drop"  DragLeave="Label_DragLeave"/>
@@ -26,10 +26,10 @@
         <TextBlock x:Name="Hard4" HorizontalAlignment="Left" Margin="289,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="109" Background="White" DragEnter="Label_DragEnter" Drop="Label_Drop" DragLeave="Label_DragLeave"/>
 
 
-        <Label x:Name="lbOS" HorizontalAlignment="Left" Margin="515,97,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Betriebs-&#xD;&#xA;system" FontFamily="Arial" FontSize="16" MouseDown="Label_MouseDown"/>
-        <Label x:Name="lbHDD" HorizontalAlignment="Left" Margin="515,142,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Festplatte" FontFamily="Arial" FontSize="16" MouseDown="Label_MouseDown"/>
-        <Label x:Name="lbDrucker" HorizontalAlignment="Left" Margin="515,187,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Drucker-&#xD;&#xA;treiber" FontFamily="Arial" FontSize="16" MouseDown="Label_MouseDown" />
-        <Label x:Name="lbMainboard" HorizontalAlignment="Left" Margin="515,232,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Mainboard" FontFamily="Arial" FontSize="16" MouseDown="Label_MouseDown"/>
+        <Label x:Name="lbOS" HorizontalAlignment="Left" Margin="515,97,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Betriebs-&#xD;&#xA;system" FontFamily="Arial" FontSize="14" MouseDown="Label_MouseDown"/>
+        <Label x:Name="lbHDD" HorizontalAlignment="Left" Margin="515,142,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Festplatte" FontFamily="Arial" FontSize="14" MouseDown="Label_MouseDown"/>
+        <Label x:Name="lbDrucker" HorizontalAlignment="Left" Margin="515,187,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Drucker-&#xD;&#xA;treiber" FontFamily="Arial" FontSize="14" MouseDown="Label_MouseDown" />
+        <Label x:Name="lbMainboard" HorizontalAlignment="Left" Margin="515,232,0,0" VerticalAlignment="Top" Height="40" Width="109" Background="White" Content="Mainboard" FontFamily="Arial" FontSize="14" MouseDown="Label_MouseDown"/>
         
         <Label Content="S&#xD;&#xA;O&#xD;&#xA;F&#xD;&#xA;T&#xD;&#xA;W&#xD;&#xA;A&#xD;&#xA;R&#xD;&#xA;E" HorizontalAlignment="Left" Margin="9,97,0,0" VerticalAlignment="Top" Height="175" FontSize="18" FontFamily="Arial" Foreground="White"/>
         

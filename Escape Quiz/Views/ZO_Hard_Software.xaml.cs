@@ -64,10 +64,7 @@ namespace Escape_Quiz.Views
                 }
             }
 
-            if (rightI == 8)
-            {
-                Score.OneUp();
-            }
+            
 
             if(clickI < 1)
             {
@@ -78,10 +75,15 @@ namespace Escape_Quiz.Views
             }
             
 
-            if(clickI > 0)
+            if(clickI > 0) 
+            {
+                if (rightI == 8)
+                {
+                    Score.OneUp();
+                    this.frame.Navigate(new EndView(this.frame));  
+                }
+            }
                 // Application.Current.MainWindow.Close();
-                
-                    this.frame.Navigate(new EndView(this.frame));
 
             clickI++;
         }
