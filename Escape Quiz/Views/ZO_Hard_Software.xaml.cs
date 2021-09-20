@@ -66,28 +66,21 @@ namespace Escape_Quiz.Views
                 }
             }
 
-            
-
-            if(clickI < 1)
-            {
-                MessageBox.Show("Herzlichen Glückwunsch!\n\n"
-                + "ihr habt das Quiz erfolgreich bestanden.\n\n"
-                + "\t  " + Score.GetScore() + " /10 richtig.\n\n"
-                + "Geht nun weiter und denkt an das Lösungswort."); //Hier Ausgabe der richtigen Anzahl an Fragen
-            }
-            
-
             if(clickI > 0) 
             {
                 if (rightI == 8)
                 {
                     Score.OneUp();
                 }
-                MessageBox.Show(Convert.ToString(Score.GetScore()));
+
+                MessageBox.Show("Herzlichen Glückwunsch!\n\n"
+                + "ihr habt das Quiz erfolgreich bestanden.\n\n"
+                + "\t  " + Score.GetScore() + " /10 richtig.\n\n"
+                + "Geht nun weiter und denkt an das Lösungswort."); //Hier Ausgabe der richtigen Anzahl an Fragen
+
                 this.frame.Navigate(new EndView(this.frame));
             }
-                // Application.Current.MainWindow.Close();
-
+            ButtonNext.Content = "Quiz beenden";
             clickI++;
         }
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
