@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Escape_Quiz"
         mc:Ignorable="d"
-        Title="MainWindow" Height="530" Width="800" OpacityMask="Black">
+        Title="IT Quiz" Height="530" Width="800" OpacityMask="Black">
     <Frame x:Name="MainFrame">
         <Frame.Content>
             <Grid Background="Black">
