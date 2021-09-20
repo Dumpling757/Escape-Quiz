@@ -36,12 +36,9 @@ namespace Escape_Quiz.Views
             
             if (clickI == 0)
             {
-
-
                 
                 CheckBox[] checkBoxes = { SuG, Monitor, RAM, Maus, Tastatur, CPU };
                 CheckBox[] rightcheckBoxes = { Monitor, Tastatur, Maus };
-
 
                 foreach (CheckBox checkBox in checkBoxes)
                 {
@@ -53,8 +50,9 @@ namespace Escape_Quiz.Views
                         {
                             rightI++;
                             checkBox.Foreground = Score.Right;
+
                         }
-                            
+
                     }
                 }
 
