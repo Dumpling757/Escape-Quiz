@@ -23,10 +23,14 @@ namespace Escape_Quiz.Views
         private Frame frame;
 
         private int clickI;
+
+        Brush right = Score.Right;
+        Brush wrong = Score.Wrong;
         public SymbolView(Frame frame)
         {
             InitializeComponent();
             this.frame = frame;
+
         }
 
 
@@ -60,7 +64,7 @@ namespace Escape_Quiz.Views
 
         }
 
-        
+
         private void TextBlock_DragLeave(object sender, DragEventArgs e)
         {
 
@@ -75,18 +79,22 @@ namespace Escape_Quiz.Views
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
 
-            Label[] labels = {bBluetooth, bLAN, bUSB, bWLAN };
+            Label[] labels = { bBluetooth, bLAN, bUSB, bWLAN };
 
             TextBlock[] textBlocks = { tbBluetooth, tbLAN, tbUSB, tbWifi };
             int rightI = 0;
 
+            foreach(TextBlock textBlock in textBlocks)
+            {
+                textBlock.Background = Score.Wrong;
+            }
             /* Doppelte ForEach Schleife geht erst durch alle TextBlock elemente und vergleicht ein einzelnes TextBlock
              * Element mit jedem Verfügbaren Label Inhalt. Wenn eine richtige Lösung gefunden wurde, wird der Zähler "rightI" erhöht.
              * Sollte der Zähler am Ende auf 8 kommen, sind alle Felder richtig ausgefüllt.
              * Sollte man bei Software oder Hardware eine Mehrfachnennung machen wird nur die erste Nennung als richtig erachtet.
              * Im ersten Methodenrumpf wird jede Feld UI erstmal auf "Falsch" gesetzt, in der inneren ForEach Schleife wird dies wieder korrigiert.
              */
-
+            /*
             foreach (TextBlock textBlock in textBlocks)
             {
                 textBlock.Background = Score.Wrong;
@@ -102,22 +110,51 @@ namespace Escape_Quiz.Views
                     }
                     else textBlock.Foreground = new SolidColorBrush(Colors.White);
                 }
-            }         
+            }  
+            */
 
-            if (clickI > 0)
+            if (tbWifi.Text == (string)bWLAN.Content)
             {
-                if (rightI == 4)
-                {
-                    Score.OneUp();
-                }
+                tbWifi.Background = right;
+                rightI++;
+            }
+
+            if (tbBluetooth.Text == (string)bBluetooth.Content)
+            {
+                tbBluetooth.Background = right;
+                rightI++;
+
+            }
+
+
+            if (tbUSB.Text == (string)bUSB.Content)
+            {
+                tbUSB.Background = right;
+
+                rightI++;
+
+            }
+            if (tbLAN.Text == (string)bLAN.Content)
+            {
+                tbLAN.Background = right;
+
+                rightI++;
+            }
+
+            if (rightI == 4)
+            {
+                Score.OneUp();
+            }
+
+            if(clickI > 0)
+            {
 
                 if (Score.GetScore() < 7)
                     this.frame.Navigate(new SC_PrivateIP(this.frame));
                 else
                     this.frame.Navigate(new EndView(this.frame));
-                
-
             }
+            
             clickI++;
 
             NextButton.Content = "Nächste Frage!";
