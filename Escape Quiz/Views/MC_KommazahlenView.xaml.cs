@@ -42,15 +42,6 @@ namespace Escape_Quiz.Views
 
             multipleChoice.CheckAnswer(answers);
             */
-
-            // Primitiver Antwortencheck
-            if (clickI > 0)
-            {
-                if ((bool)cbDouble.IsChecked && (bool)cbFloat.IsChecked)
-                {
-                    Score.OneUp();
-                }
-            }
                 
             
             cbDouble.Foreground = Score.Right;
@@ -67,6 +58,11 @@ namespace Escape_Quiz.Views
 
             if (clickI > 0)
             {
+                if ((bool)cbDouble.IsChecked && (bool)cbFloat.IsChecked)
+                {
+                    Score.OneUp();
+                }
+
                 if (Score.GetScore() < 7)
                     this.frame.Navigate(new Freitext2View(this.frame));
                 else

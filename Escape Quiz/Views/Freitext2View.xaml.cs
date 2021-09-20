@@ -43,6 +43,11 @@ namespace Escape_Quiz.Views
 
             if (clickI > 0)
             {
+                if (Answer.Background == Score.Right)
+                {
+                    Score.OneUp();
+
+                }
 
                 if (Score.GetScore() < 7)
                     this.frame.Navigate(new ZO_Hard_Software(this.frame));
@@ -50,11 +55,7 @@ namespace Escape_Quiz.Views
                     this.frame.Navigate(new EndView(this.frame));
 
 
-                if (Answer.Background == Score.Right)
-                {
-                    Score.OneUp();
-                    
-                }
+                
             }
 
             ButtonNext.Content = "Nächste Frage";
