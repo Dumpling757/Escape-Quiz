@@ -54,8 +54,6 @@ namespace Escape_Quiz.Views
                 if ((bool)Zahl.IsChecked)                
                     Score.OneUp();
 
-                MessageBox.Show(Convert.ToString(Score.GetScore()));
-
                 if (Score.GetScore() < 7)
                     this.frame.Navigate(new Freitext1View(this.frame));
                 else
