@@ -48,13 +48,7 @@ namespace Escape_Quiz.Views
             {
                 if ((bool)cbDouble.IsChecked && (bool)cbFloat.IsChecked)
                 {
-                    MessageBox.Show("Richtig!");
                     Score.OneUp();
-                    // TODO IncreaseScore
-                }
-                else
-                {
-                    MessageBox.Show("Falsch!");
                 }
             }
                 

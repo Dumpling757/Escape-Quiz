@@ -53,7 +53,7 @@ namespace Escape_Quiz.Views
                 LT_TB1.Foreground = Score.Wrong;
             }
 
-            if(LT_TB2.Text == "255.255.255.255")
+            if(LT_TB2.Text == "255.255.255.0")
             {
                 LT_TB2.Foreground = Score.Right;
             }
