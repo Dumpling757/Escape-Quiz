@@ -41,17 +41,20 @@ namespace Escape_Quiz.Views
             APIPA.Foreground = Score.Wrong;
             APIPA.IsEnabled = false;
 
+            if ((bool)privIP.IsChecked)
+            {
+                //MessageBox.Show("Richtig!");
+                privIP.Foreground = Score.Right;
+
+            }
             if (clickI > 0)
             {
-
-                if ((bool)privIP.IsChecked)
-                {
-                    //MessageBox.Show("Richtig!");
+                if((bool)privIP.IsChecked)
                     Score.OneUp();
-                    MessageBox.Show(Convert.ToString(Score.GetScore()));
-                    privIP.Foreground = Score.Right;
 
-                }
+                MessageBox.Show(Convert.ToString(Score.GetScore()));
+
+
                 if (Score.GetScore() < 7)
                     this.frame.Navigate(new LT_PraefixView(this.frame));
                 else
