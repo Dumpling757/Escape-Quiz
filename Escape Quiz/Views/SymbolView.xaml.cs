@@ -23,9 +23,6 @@ namespace Escape_Quiz.Views
         private Frame frame;
 
         private int clickI;
-
-        private Brush right =new SolidColorBrush(Colors.Green);
-        private Brush wrong = new SolidColorBrush(Colors.Red);
         public SymbolView(Frame frame)
         {
             InitializeComponent();
@@ -92,22 +89,19 @@ namespace Escape_Quiz.Views
 
             foreach (TextBlock textBlock in textBlocks)
             {
-                textBlock.Background = wrong;
+                textBlock.Background = Score.Wrong;
                 foreach(Label label in labels)
                 {
                     if((string)label.Content == textBlock.Text)
                     {
-                        textBlock.Background = right;
+                        textBlock.Background = Score.Right;
                         textBlock.Foreground = new SolidColorBrush(Colors.White);
                         rightI++;
                         label.IsEnabled = false;
                         textBlock.IsEnabled = false;
                     }
                 }
-            }
-
-            
-                
+            }         
 
             if (clickI > 0)
             {
