@@ -35,7 +35,7 @@ namespace Escape_Quiz.Views
             Answer.Background = Score.Wrong;
             string answerstring = Answer.Text;
 
-            if (answerstring == "domainnamesystem" || Answer.Text == "Domain Name System")
+            if (answerstring == "domainnamesystem" || Answer.Text == "Domain Name System" || answerstring.ToLower() == "domain name system")
             {
                
                 Answer.Background = Score.Right;

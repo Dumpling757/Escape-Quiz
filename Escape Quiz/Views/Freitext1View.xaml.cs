@@ -39,7 +39,7 @@ namespace Escape_Quiz.Views
             Regex r = new Regex(regstring);
             r.Replace(answerstring, "");
 
-            if (answerstring == "hypertextmarkuplanguage" || Answer.Text == "Hypertext Markup Language")
+            if (answerstring == "hypertextmarkuplanguage" || Answer.Text == "Hypertext Markup Language" || answerstring.ToLower() == "hypertext markup language")
             {
                 
                 Answer.Background = Score.Right;
