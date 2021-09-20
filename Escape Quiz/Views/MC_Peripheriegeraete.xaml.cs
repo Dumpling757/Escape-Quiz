@@ -35,12 +35,9 @@ namespace Escape_Quiz.Views
             int rightI = 0;
             if (clickI == 0)
             {
-
-
                 
                 CheckBox[] checkBoxes = { SuG, Monitor, RAM, Maus, Tastatur, CPU };
                 CheckBox[] rightcheckBoxes = { Monitor, Tastatur, Maus };
-
 
                 foreach (CheckBox checkBox in checkBoxes)
                 {
@@ -52,12 +49,12 @@ namespace Escape_Quiz.Views
                         {
                             rightI++;
                             checkBox.Foreground = Score.Right;
+
                         }
-                            
+
                     }
                 }
 
-                MessageBox.Show("Leider nicht richtig.\nSchau dir die Lösungen an und gehe dann weiter zur nächsten Aufgabe!");
                 if (rightI == 3)
                 {
                     // MessageBox.Show("Its right!");
