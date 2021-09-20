@@ -42,7 +42,7 @@ namespace Escape_Quiz.Views
             r.Replace(LT_TB1.Text, "");
             r.Replace(LT_TB2.Text, "");
 
-            if(LT_TB1.Text == "16" && LT_TB2.Text == "255.255.255.255")
+            if(LT_TB1.Text == "16" && LT_TB2.Text == "255.255.255.0")
             {
                 Score.OneUp();
             }
