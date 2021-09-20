@@ -46,7 +46,7 @@ namespace Escape_Quiz.Views
                     checkBox.Foreground = Score.Wrong;
                     foreach (CheckBox check in rightcheckBoxes)
                     {
-                        if (check == checkBox)
+                        if (check == checkBox && (bool)check.IsChecked)
                         {
                             rightI++;
                             checkBox.Foreground = Score.Right;
@@ -59,6 +59,7 @@ namespace Escape_Quiz.Views
                 if (rightI == 3)
                 {
                     Score.OneUp();
+
                 }
 
             }
