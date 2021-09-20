@@ -41,12 +41,13 @@ namespace Escape_Quiz.Views
 
             if (answerstring == "hypertextmarkuplanguage" || Answer.Text == "Hypertext Markup Language")
             {
-                Score.OneUp();
+                
                 Answer.Background = Score.Right;
             }
 
             if(clickI > 0)
             {
+                Score.OneUp();
                 if (Score.GetScore() < 7)
                     this.frame.Navigate(new SymbolView(this.frame));
                 else

@@ -77,6 +77,7 @@ namespace Escape_Quiz.Views
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
+
             Label[] labels = {bBluetooth, bLAN, bUSB, bWLAN };
 
             TextBlock[] textBlocks = { tbBluetooth, tbLAN, tbUSB, tbWifi };
@@ -102,14 +103,16 @@ namespace Escape_Quiz.Views
                 }
             }
 
-            if (rightI == 4)
-            {
-                Score.OneUp();
-            }
+            
                 
 
             if (clickI > 0)
             {
+                if (rightI == 4)
+                {
+                    Score.OneUp();
+                }
+
                 if (Score.GetScore() < 7)
                     this.frame.Navigate(new SC_PrivateIP(this.frame));
                 else

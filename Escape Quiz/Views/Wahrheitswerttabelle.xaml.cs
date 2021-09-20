@@ -66,14 +66,14 @@ namespace Escape_Quiz.Views
                 rightI++;
             }
 
-            if(rightI == 4)
-            {
-                Score.OneUp();
-            }
-
 
             if (clickI > 0)
             {
+                if (rightI == 4)
+                {
+                    Score.OneUp();
+                }
+
                 if (Score.GetScore() < 7)
                     this.FrameQuestion.Navigate(new SC_Datenspeicher_View(this.FrameQuestion));
                 else

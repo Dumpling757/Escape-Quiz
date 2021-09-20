@@ -32,6 +32,7 @@ namespace Escape_Quiz.Views
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
+            
             /*
             List<bool> answers = new List<bool>();
             answers.Add((bool)cbBoolean.IsChecked);
@@ -43,16 +44,20 @@ namespace Escape_Quiz.Views
             */
 
             // Primitiver Antwortencheck
-            if((bool)cbDouble.IsChecked && (bool)cbFloat.IsChecked)
+            if (clickI > 0)
             {
-                MessageBox.Show("Richtig!");
-                Score.OneUp();
-                // TODO IncreaseScore
+                if ((bool)cbDouble.IsChecked && (bool)cbFloat.IsChecked)
+                {
+                    MessageBox.Show("Richtig!");
+                    Score.OneUp();
+                    // TODO IncreaseScore
+                }
+                else
+                {
+                    MessageBox.Show("Falsch!");
+                }
             }
-            else
-            {
-                MessageBox.Show("Falsch!");
-            }
+                
             
             cbDouble.Foreground = Score.Right;
             cbDouble.IsEnabled = false;
