@@ -37,35 +37,38 @@ namespace Escape_Quiz.Views
             Brush right = new SolidColorBrush(Colors.Green);
             Brush wrong = new SolidColorBrush(Colors.Red);
 
-            FirstTB.Background = wrong;
-            ThirdTB.Background = wrong;
-            FourthTB.Background = wrong;
-            FifthTB.Background = wrong;
-
-            if (FirstTB.Text == "0")
+            if (clickI < 1)
             {
-                FirstTB.Background = right;
-                rightI++;
+                FirstTB.Background = wrong;
+                ThirdTB.Background = wrong;
+                FourthTB.Background = wrong;
+                FifthTB.Background = wrong;
+
+                if (FirstTB.Text == "0")
+                {
+                    FirstTB.Background = right;
+                    rightI++;
+                }
+
+
+                if (ThirdTB.Text == "1")
+                {
+                    ThirdTB.Background = right;
+                    rightI++;
+                }
+
+                if (FourthTB.Text == "1")
+                {
+                    FourthTB.Background = right;
+                    rightI++;
+                }
+                if (FifthTB.Text == "1")
+                {
+                    FifthTB.Background = right;
+                    rightI++;
+                }
             }
             
-
-            if(ThirdTB.Text == "1")
-            {
-               ThirdTB.Background  = right;
-                rightI++;
-            }
-
-            if(FourthTB.Text == "1")
-            {
-               FourthTB.Background = right;
-                rightI++;
-            }
-            if(FifthTB.Text == "1")
-            {
-                FifthTB.Background = right;
-                rightI++;
-            }
-
 
             if (clickI > 0)
             {
@@ -73,6 +76,7 @@ namespace Escape_Quiz.Views
                 {
                     Score.OneUp();
                 }
+
 
                 if (Score.GetScore() < 7)
                     this.FrameQuestion.Navigate(new SC_Datenspeicher_View(this.FrameQuestion));
