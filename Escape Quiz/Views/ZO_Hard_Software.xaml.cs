@@ -80,8 +80,9 @@ namespace Escape_Quiz.Views
                 if (rightI == 8)
                 {
                     Score.OneUp();
-                    this.frame.Navigate(new EndView(this.frame));  
+                    
                 }
+                this.frame.Navigate(new EndView(this.frame));
             }
                 // Application.Current.MainWindow.Close();
 
