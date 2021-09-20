@@ -32,6 +32,7 @@ namespace Escape_Quiz.Views
         {
             bool correct = false;
             Answer.Background = Score.Wrong;
+            Answer.IsEnabled = false;
 
             string answerstring = Answer.Text;
             answerstring = answerstring.ToLower();

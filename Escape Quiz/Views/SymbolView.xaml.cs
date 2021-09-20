@@ -99,6 +99,8 @@ namespace Escape_Quiz.Views
                     {
                         textBlock.Background = right;
                         rightI++;
+                        label.IsEnabled = false;
+                        textBlock.IsEnabled = false;
                     }
                 }
             }
