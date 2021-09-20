@@ -33,7 +33,7 @@ namespace Escape_Quiz.Views
             
             
 
-            Zahl.Foreground = Score.Right;
+            Zahl.Foreground = Score.Wrong;
             Zahl.IsEnabled = false;
 
             Bild.Foreground = Score.Wrong;
@@ -45,13 +45,16 @@ namespace Escape_Quiz.Views
             Software.Foreground = Score.Wrong;
             Software.IsEnabled = false;
 
-            
+            if ((bool)Zahl.IsChecked)
+                Zahl.Foreground = Score.Right;
+
+
             if(clickI > 0)
             {
-                if ((bool)Zahl.IsChecked)
-                {
+                if ((bool)Zahl.IsChecked)                
                     Score.OneUp();
-                }
+                
+
                 if (Score.GetScore() < 7)
                     this.frame.Navigate(new Freitext1View(this.frame));
                 else

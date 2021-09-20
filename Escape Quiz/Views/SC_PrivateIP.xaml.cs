@@ -52,7 +52,6 @@ namespace Escape_Quiz.Views
                 if((bool)privIP.IsChecked)
                     Score.OneUp();
 
-                MessageBox.Show(Convert.ToString(Score.GetScore()));
 
 
                 if (Score.GetScore() < 7)
