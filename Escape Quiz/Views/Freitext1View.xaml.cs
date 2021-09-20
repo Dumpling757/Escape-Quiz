@@ -44,6 +44,7 @@ namespace Escape_Quiz.Views
             if (answerstring == "hypertextmarkuplanguage" || Answer.Text == "Hypertext Markup Language" || answerstring.ToLower() == "hypertext markup language")
             {
                 Answer.Background = Score.Right;
+                Answer.Foreground = new SolidColorBrush(Colors.White);
                 correct = true;
             }
 

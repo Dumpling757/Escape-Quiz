@@ -40,6 +40,8 @@ namespace Escape_Quiz.Views
             {
                
                 Answer.Background = Score.Right;
+                Answer.Foreground = new SolidColorBrush(Colors.White);
+
             }
 
             if (clickI > 0)
