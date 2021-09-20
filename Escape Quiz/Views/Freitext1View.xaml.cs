@@ -47,6 +47,7 @@ namespace Escape_Quiz.Views
                 Answer.Foreground = new SolidColorBrush(Colors.White);
                 correct = true;
             }
+            else Answer.Foreground = new SolidColorBrush(Colors.White); 
 
             if(clickI > 0)
             {
