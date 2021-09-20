@@ -41,7 +41,7 @@ namespace Escape_Quiz
                  "Eure Aufgabe ist es nun, dieses Quiz mit Themen rund um die Informationstechnologie zu bestehen, " +
                  "um einen benötigten Code für die nächste Station zu erhalten. \n\n" +
                  "HINWEIS\n" +
-                 "Sei aufmerksam, denn zurückgehen kannst du nicht! \n\n" +
+                 "Seit aufmerksam, denn zurückgehen könnt ihr nicht! \n\n" +
                  "Und nun: VIEL SPAß!");
 
             this.MainFrame.Navigate(new Views.Wahrheitswerttabelle(this.MainFrame));
