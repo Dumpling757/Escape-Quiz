@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Threading;
 
 namespace Escape_Quiz.Views
 {
@@ -43,6 +44,9 @@ namespace Escape_Quiz.Views
 
         private void ButtonNext_Click(object sender, RoutedEventArgs e)
         {
+            System.Net.WebRequest webRequest = System.Net.WebRequest.Create("http://192.168.100.9:50010/mg?game=quiz&psk=escaperoom194");
+            webRequest.GetResponse();
+
             Application.Current.MainWindow.Close();
         }
     }
