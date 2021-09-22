@@ -36,10 +36,12 @@ namespace Escape_Quiz.Views
             LT_TB1.IsEnabled = false;
             LT_TB2.IsEnabled = false;
 
+            /*
             if(LT_TB1.Text == "16" && LT_TB2.Text == "255.255.255.0")
             {
                 Score.OneUp();
             }
+            */
 
             if(LT_TB1.Text == "16")
             {
