@@ -9,6 +9,10 @@ namespace Escape_Quiz
 {
     class Score
     {
+        /*
+         * Alle Attribute hier sind statisch, damit es nur die eine Instanz dieser Klasse existiert und nur über Score.* angesprochen werden muss.
+         */
+
         private static int finalScore;
         public static Brush Right { get => new SolidColorBrush(Colors.Green); }
         public static Brush Wrong { get => new SolidColorBrush(Colors.Red); }

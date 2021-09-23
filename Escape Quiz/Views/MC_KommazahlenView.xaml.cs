@@ -56,6 +56,15 @@ namespace Escape_Quiz.Views
 
 
 
+
+            /*
+             * Während des ersten Klicks werden alle Elemente in die entsprechenden Arrays gespeichert.
+             */
+
+            /*
+             * Erst wenn die Überprüfung fertig ist, wird der nächste Navigationsschritt getätigt, wenn der benutzer jetzt 7 Punkte hat,
+             * würde das Quiz beendet werden, wenn nicht wird er zur nächsten Frage weitergeleitet.
+             */
             if (clickI > 0)
             {
                 if ((bool)cbDouble.IsChecked && (bool)cbFloat.IsChecked)
@@ -72,6 +81,10 @@ namespace Escape_Quiz.Views
                 
 
             }
+
+
+            // Wenn der Button geklickt wurde, wird clickI hochgezählt und der neue Content reflecktiert besser, was die Aufgabe des Buttons ist, wenn der button danach geklickt wird.
+
             clickI++;
             ButtonNext.Content = "Nächste Frage";
 

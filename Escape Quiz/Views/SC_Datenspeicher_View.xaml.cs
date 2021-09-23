@@ -30,8 +30,9 @@ namespace Escape_Quiz.Views
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
-            
-            
+
+            // Alle User Interktiven Elemente werden deaktiviert und erstmal auf Falsch gesetzt.
+
 
             Zahl.Foreground = Score.Wrong;
             Zahl.IsEnabled = false;
@@ -49,7 +50,13 @@ namespace Escape_Quiz.Views
                 Zahl.Foreground = Score.Right;
 
 
-            if(clickI > 0)
+
+            /*
+             * Erst wenn die Überprüfung fertig ist, wird der nächste Navigationsschritt getätigt, wenn der benutzer jetzt 7 Punkte hat,
+             * würde das Quiz beendet werden, wenn nicht wird er zur nächsten Frage weitergeleitet.
+             */
+
+            if (clickI > 0)
             {
                 if ((bool)Zahl.IsChecked)                
                     Score.OneUp();
@@ -60,6 +67,8 @@ namespace Escape_Quiz.Views
                     this.frame.Navigate(new EndView(this.frame));
                 
             }
+
+            // Wenn der Button geklickt wurde, wird clickI hochgezählt und der neue Content reflecktiert besser, was die Aufgabe des Buttons ist, wenn der button danach geklickt wird.
 
             clickI++;
             ButtonNext.Content = "Nächste Frage";

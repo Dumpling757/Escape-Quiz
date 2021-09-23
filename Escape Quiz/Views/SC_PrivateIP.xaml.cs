@@ -32,6 +32,7 @@ namespace Escape_Quiz.Views
 
         private void Button_NextQuestion(object sender, RoutedEventArgs e)
         {
+            // Alle RadioButtons werden deaktiviert und erstmal auf Falsch gesetzt.
             privIP.Foreground = Score.Wrong;
             privIP.IsEnabled = false;
             localhost.Foreground = Score.Wrong;
@@ -41,9 +42,11 @@ namespace Escape_Quiz.Views
             APIPA.Foreground = Score.Wrong;
             APIPA.IsEnabled = false;
 
+
+            // wenn der richtige Radio Button angewählt wird, wird dem User angezeigt, dass die richtige Antwort gewählt wurde und der Score wird aktualisiert.
             if ((bool)privIP.IsChecked)
             {
-                //MessageBox.Show("Richtig!");
+                
                 privIP.Foreground = Score.Right;
 
             }
@@ -52,7 +55,11 @@ namespace Escape_Quiz.Views
                 if((bool)privIP.IsChecked)
                     Score.OneUp();
 
-                
+
+                /*
+                 * Erst wenn die Überprüfung fertig ist, wird der nächste Navigationsschritt getätigt, wenn der benutzer jetzt 7 Punkte hat,
+                 * würde das Quiz beendet werden, wenn nicht wird er zur nächsten Frage weitergeleitet.
+                 */
 
                 if (Score.GetScore() < 7)
                     this.frame.Navigate(new LT_PraefixView(this.frame));
@@ -61,6 +68,8 @@ namespace Escape_Quiz.Views
                 
 
             }
+            // Wenn der Button geklickt wurde, wird clickI hochgezählt und der neue Content reflecktiert besser, was die Aufgabe des Buttons ist, wenn der button danach geklickt wird.
+
             clickI++;
             ButtonNext.Content = "Nächste Frage";
         }
