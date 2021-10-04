@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -43,8 +44,29 @@ namespace Escape_Quiz.Views
 
         private void ButtonNext_Click(object sender, RoutedEventArgs e)
         {
-            System.Net.WebRequest webRequest = System.Net.WebRequest.Create("http://192.168.100.9:50010/mg?game=quiz&psk=escaperoom194");
-            webRequest.GetResponse();
+            bool fuk = false;
+            do
+            {
+                try
+                {
+                    WebRequest webRequest = WebRequest.Create("http://192.168.100.9:50010/mg?game=quiz&psk=escaperoom194");
+                    HttpWebResponse httpWebResponse = (HttpWebResponse)webRequest.GetResponse();
+
+                    if (httpWebResponse.StatusCode == HttpStatusCode.OK)
+                    {
+                        fuk = false;
+                    }
+                    httpWebResponse.Close();
+                }
+                catch
+                {
+                    fuk = true;
+                    MessageBox.Show("Keine Netzwerkkonnektivität festgestellt! Fenster nicht schließen und dem Admin bescheid geben! Mit OK drücken noch einmal probieren!");
+                }
+            }
+            while (fuk);
+            
+            
 
             Application.Current.MainWindow.Close();
         }
